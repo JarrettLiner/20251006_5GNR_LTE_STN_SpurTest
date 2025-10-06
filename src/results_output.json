@@ -8,212 +8,212 @@
     "power_dbm": -70,
     "spurs": [
       {
+        "frequency_hz": 1219170000.0,
+        "power_dbm": -105.925704956
+      },
+      {
+        "frequency_hz": 1223977000.0,
+        "power_dbm": -105.965698242
+      },
+      {
+        "frequency_hz": 1230873000.0,
+        "power_dbm": -105.987419128
+      },
+      {
+        "frequency_hz": 1236651000.0,
+        "power_dbm": -106.012565613
+      },
+      {
+        "frequency_hz": 1244603000.0,
+        "power_dbm": -105.784866333
+      },
+      {
+        "frequency_hz": 1247590000.0,
+        "power_dbm": -106.015289307
+      },
+      {
+        "frequency_hz": 1258625000.0,
+        "power_dbm": -105.783409119
+      },
+      {
+        "frequency_hz": 1265241000.0,
+        "power_dbm": -106.016311646
+      },
+      {
+        "frequency_hz": 1287894000.0,
+        "power_dbm": -105.406112671
+      },
+      {
+        "frequency_hz": 1320781000.0,
+        "power_dbm": -105.394226074
+      },
+      {
+        "frequency_hz": 1355416000.0,
+        "power_dbm": -105.71105957
+      },
+      {
+        "frequency_hz": 1399362000.0,
+        "power_dbm": -105.807540894
+      },
+      {
+        "frequency_hz": 1401220000.0,
+        "power_dbm": -106.005683899
+      },
+      {
+        "frequency_hz": 1403053000.0,
+        "power_dbm": -105.966247559
+      },
+      {
+        "frequency_hz": 1422064000.0,
+        "power_dbm": -105.990760803
+      },
+      {
         "frequency_hz": 1430003000.0,
-        "power_dbm": -80.8797531128
+        "power_dbm": -80.8601608276
+      },
+      {
+        "frequency_hz": 1431448000.0,
+        "power_dbm": -106.037406921
+      },
+      {
+        "frequency_hz": 1439485000.0,
+        "power_dbm": -105.590614319
+      },
+      {
+        "frequency_hz": 1505064000.0,
+        "power_dbm": -105.813781738
+      },
+      {
+        "frequency_hz": 1550249000.0,
+        "power_dbm": -105.331253052
+      },
+      {
+        "frequency_hz": 1552458000.0,
+        "power_dbm": -105.814933777
+      },
+      {
+        "frequency_hz": 1595591000.0,
+        "power_dbm": -105.428512573
+      },
+      {
+        "frequency_hz": 1611240000.0,
+        "power_dbm": -106.055404663
+      },
+      {
+        "frequency_hz": 1613570000.0,
+        "power_dbm": -105.818519592
+      },
+      {
+        "frequency_hz": 1627483000.0,
+        "power_dbm": -104.985923767
+      },
+      {
+        "frequency_hz": 1639598000.0,
+        "power_dbm": -105.358695984
+      },
+      {
+        "frequency_hz": 1678373000.0,
+        "power_dbm": -106.073303223
+      },
+      {
+        "frequency_hz": 1706052000.0,
+        "power_dbm": -105.927223206
+      },
+      {
+        "frequency_hz": 1708966000.0,
+        "power_dbm": -105.569099426
+      },
+      {
+        "frequency_hz": 1712292000.0,
+        "power_dbm": -105.942375183
+      },
+      {
+        "frequency_hz": 1844155000.0,
+        "power_dbm": -105.911346436
+      },
+      {
+        "frequency_hz": 1856817000.0,
+        "power_dbm": -105.98349762
+      },
+      {
+        "frequency_hz": 1886305000.0,
+        "power_dbm": -106.063957214
+      },
+      {
+        "frequency_hz": 1900557000.0,
+        "power_dbm": -105.827194214
+      },
+      {
+        "frequency_hz": 1929875000.0,
+        "power_dbm": -101.831329346
       },
       {
         "frequency_hz": 1929996000.0,
-        "power_dbm": -56.468421936
+        "power_dbm": -56.4157295227
       },
       {
-        "frequency_hz": 2407215000.0,
-        "power_dbm": -101.627624512
+        "frequency_hz": 1930130000.0,
+        "power_dbm": -103.516265869
       },
       {
-        "frequency_hz": 2407276000.0,
-        "power_dbm": -98.9778137207
+        "frequency_hz": 1930263000.0,
+        "power_dbm": -105.666946411
       },
       {
-        "frequency_hz": 2407676000.0,
-        "power_dbm": -99.2260665894
+        "frequency_hz": 1944528000.0,
+        "power_dbm": -105.663627625
       },
       {
-        "frequency_hz": 2407871000.0,
-        "power_dbm": -99.9798202515
+        "frequency_hz": 1966635000.0,
+        "power_dbm": -104.879241943
       },
       {
-        "frequency_hz": 2408077000.0,
-        "power_dbm": -98.2994613647
+        "frequency_hz": 2004353000.0,
+        "power_dbm": -105.412788391
       },
       {
-        "frequency_hz": 2408271000.0,
-        "power_dbm": -97.2070770264
+        "frequency_hz": 2106717000.0,
+        "power_dbm": -105.825828552
       },
       {
-        "frequency_hz": 2408320000.0,
-        "power_dbm": -101.733261108
+        "frequency_hz": 2126553000.0,
+        "power_dbm": -105.940551758
       },
       {
-        "frequency_hz": 2408623000.0,
-        "power_dbm": -102.615333557
+        "frequency_hz": 2238240000.0,
+        "power_dbm": -105.947845459
       },
       {
-        "frequency_hz": 2408672000.0,
-        "power_dbm": -96.9605331421
+        "frequency_hz": 2253463000.0,
+        "power_dbm": -105.480995178
       },
       {
-        "frequency_hz": 2408866000.0,
-        "power_dbm": -100.05783844
+        "frequency_hz": 2309161000.0,
+        "power_dbm": -105.782119751
       },
       {
-        "frequency_hz": 2408975000.0,
-        "power_dbm": -102.234802246
+        "frequency_hz": 2311856000.0,
+        "power_dbm": -104.762016296
       },
       {
-        "frequency_hz": 2409072000.0,
-        "power_dbm": -98.1557159424
+        "frequency_hz": 2329593000.0,
+        "power_dbm": -105.780845642
       },
       {
-        "frequency_hz": 2409279000.0,
-        "power_dbm": -96.9428100586
+        "frequency_hz": 2363657000.0,
+        "power_dbm": -104.693847656
       },
       {
-        "frequency_hz": 2409352000.0,
-        "power_dbm": -101.981689453
-      },
-      {
-        "frequency_hz": 2409424000.0,
-        "power_dbm": -101.823890686
-      },
-      {
-        "frequency_hz": 2409522000.0,
-        "power_dbm": -102.148933411
-      },
-      {
-        "frequency_hz": 2409667000.0,
-        "power_dbm": -97.9645462036
-      },
-      {
-        "frequency_hz": 2409728000.0,
-        "power_dbm": -99.7435836792
-      },
-      {
-        "frequency_hz": 2409874000.0,
-        "power_dbm": -98.5542221069
-      },
-      {
-        "frequency_hz": 2410080000.0,
-        "power_dbm": -98.7892608643
-      },
-      {
-        "frequency_hz": 2410274000.0,
-        "power_dbm": -96.1431732178
-      },
-      {
-        "frequency_hz": 2410675000.0,
-        "power_dbm": -98.8716201782
-      },
-      {
-        "frequency_hz": 2410736000.0,
-        "power_dbm": -102.448455811
-      },
-      {
-        "frequency_hz": 2410881000.0,
-        "power_dbm": -100.375640869
-      },
-      {
-        "frequency_hz": 2411075000.0,
-        "power_dbm": -98.9319000244
-      },
-      {
-        "frequency_hz": 2411270000.0,
-        "power_dbm": -97.2437667847
-      },
-      {
-        "frequency_hz": 2411670000.0,
-        "power_dbm": -100.42048645
-      },
-      {
-        "frequency_hz": 2412277000.0,
-        "power_dbm": -100.95149231
-      },
-      {
-        "frequency_hz": 2412678000.0,
-        "power_dbm": -98.5126037598
-      },
-      {
-        "frequency_hz": 2412739000.0,
-        "power_dbm": -102.292648315
-      },
-      {
-        "frequency_hz": 2412872000.0,
-        "power_dbm": -100.403778076
-      },
-      {
-        "frequency_hz": 2413066000.0,
-        "power_dbm": -102.105690002
-      },
-      {
-        "frequency_hz": 2413273000.0,
-        "power_dbm": -98.4063568115
-      },
-      {
-        "frequency_hz": 2413673000.0,
-        "power_dbm": -97.6702804565
-      },
-      {
-        "frequency_hz": 2413734000.0,
-        "power_dbm": -101.68321991
-      },
-      {
-        "frequency_hz": 2413880000.0,
-        "power_dbm": -101.172103882
-      },
-      {
-        "frequency_hz": 2414074000.0,
-        "power_dbm": -100.796638489
-      },
-      {
-        "frequency_hz": 2414208000.0,
-        "power_dbm": -101.450553894
-      },
-      {
-        "frequency_hz": 2414268000.0,
-        "power_dbm": -99.6001281738
-      },
-      {
-        "frequency_hz": 2414669000.0,
-        "power_dbm": -99.2814865112
-      },
-      {
-        "frequency_hz": 2414875000.0,
-        "power_dbm": -100.967750549
-      },
-      {
-        "frequency_hz": 2415082000.0,
-        "power_dbm": -102.501449585
-      },
-      {
-        "frequency_hz": 2415276000.0,
-        "power_dbm": -99.9040908813
-      },
-      {
-        "frequency_hz": 2415616000.0,
-        "power_dbm": -102.73021698
-      },
-      {
-        "frequency_hz": 2415676000.0,
-        "power_dbm": -99.6384735107
-      },
-      {
-        "frequency_hz": 2415871000.0,
-        "power_dbm": -101.154136658
-      },
-      {
-        "frequency_hz": 2416271000.0,
-        "power_dbm": -102.024963379
-      },
-      {
-        "frequency_hz": 2416672000.0,
-        "power_dbm": -101.233459473
+        "frequency_hz": 2412217000.0,
+        "power_dbm": -105.838348389
       }
     ],
     "config": "2.430GHz_Spur_RBW0.020MHz_Limit-122.00dBm",
     "timings": {
-      "VSG_config": 4.952886699989904,
-      "VSA_config": 0.36669029999757186,
-      "measure": 7.112409299996216,
-      "get_results": 0.4114747999701649
+      "VSG_config": 4.213229700049851,
+      "VSA_config": 0.3693607999593951,
+      "measure": 8.935741399996914,
+      "get_results": 0.41228519997093827
     }
   },
   {
@@ -226,211 +226,211 @@
     "spurs": [
       {
         "frequency_hz": 1439997000.0,
-        "power_dbm": -80.5714950562
-      },
-      {
-        "frequency_hz": 1493449000.0,
-        "power_dbm": -104.347587585
-      },
-      {
-        "frequency_hz": 1939867000.0,
-        "power_dbm": -103.192474365
+        "power_dbm": -80.5941925049
       },
       {
         "frequency_hz": 1940001000.0,
-        "power_dbm": -56.3010940552
+        "power_dbm": -56.2699165344
       },
       {
-        "frequency_hz": 1940123000.0,
-        "power_dbm": -103.82963562
+        "frequency_hz": 2407069000.0,
+        "power_dbm": -100.281600952
       },
       {
-        "frequency_hz": 1988663000.0,
-        "power_dbm": -103.693702698
+        "frequency_hz": 2407532000.0,
+        "power_dbm": -100.181846619
       },
       {
-        "frequency_hz": 1989480000.0,
-        "power_dbm": -103.959648132
+        "frequency_hz": 2407873000.0,
+        "power_dbm": -99.4405899048
       },
       {
-        "frequency_hz": 2408239000.0,
-        "power_dbm": -101.686294556
+        "frequency_hz": 2408019000.0,
+        "power_dbm": -99.109588623
       },
       {
-        "frequency_hz": 2408629000.0,
-        "power_dbm": -104.272987366
+        "frequency_hz": 2408068000.0,
+        "power_dbm": -99.7493591309
       },
       {
-        "frequency_hz": 2408763000.0,
-        "power_dbm": -102.617546082
+        "frequency_hz": 2408422000.0,
+        "power_dbm": -98.388053894
       },
       {
-        "frequency_hz": 2408934000.0,
-        "power_dbm": -104.238494873
+        "frequency_hz": 2408531000.0,
+        "power_dbm": -98.9242324829
       },
       {
-        "frequency_hz": 2409019000.0,
-        "power_dbm": -104.480567932
+        "frequency_hz": 2408824000.0,
+        "power_dbm": -100.718940735
       },
       {
-        "frequency_hz": 2409238000.0,
-        "power_dbm": -101.339874268
+        "frequency_hz": 2408873000.0,
+        "power_dbm": -98.0246734619
       },
       {
-        "frequency_hz": 2409628000.0,
-        "power_dbm": -103.182228088
+        "frequency_hz": 2409068000.0,
+        "power_dbm": -97.7147216797
       },
       {
-        "frequency_hz": 2409763000.0,
-        "power_dbm": -101.166908264
+        "frequency_hz": 2409117000.0,
+        "power_dbm": -101.488883972
+      },
+      {
+        "frequency_hz": 2409421000.0,
+        "power_dbm": -99.2147293091
+      },
+      {
+        "frequency_hz": 2409531000.0,
+        "power_dbm": -98.9704284668
+      },
+      {
+        "frequency_hz": 2409872000.0,
+        "power_dbm": -98.946182251
       },
       {
         "frequency_hz": 2410019000.0,
-        "power_dbm": -101.87978363
+        "power_dbm": -99.0835800171
       },
       {
         "frequency_hz": 2410067000.0,
-        "power_dbm": -103.346061707
+        "power_dbm": -98.6384887695
       },
       {
-        "frequency_hz": 2410238000.0,
-        "power_dbm": -101.301597595
+        "frequency_hz": 2410116000.0,
+        "power_dbm": -99.3474578857
       },
       {
-        "frequency_hz": 2410372000.0,
-        "power_dbm": -102.286254883
+        "frequency_hz": 2410421000.0,
+        "power_dbm": -99.5160827637
       },
       {
-        "frequency_hz": 2410470000.0,
-        "power_dbm": -103.41418457
+        "frequency_hz": 2410531000.0,
+        "power_dbm": -99.3763504028
       },
       {
-        "frequency_hz": 2410628000.0,
-        "power_dbm": -102.388290405
+        "frequency_hz": 2410872000.0,
+        "power_dbm": -98.9733428955
       },
       {
-        "frequency_hz": 2410762000.0,
-        "power_dbm": -101.829963684
+        "frequency_hz": 2411067000.0,
+        "power_dbm": -98.1534805298
       },
       {
-        "frequency_hz": 2411006000.0,
-        "power_dbm": -102.913475037
+        "frequency_hz": 2411116000.0,
+        "power_dbm": -100.214103699
       },
       {
-        "frequency_hz": 2411238000.0,
-        "power_dbm": -99.8516235352
+        "frequency_hz": 2411420000.0,
+        "power_dbm": -98.7011795044
       },
       {
-        "frequency_hz": 2411433000.0,
-        "power_dbm": -104.019889832
+        "frequency_hz": 2411530000.0,
+        "power_dbm": -99.7688827515
       },
       {
-        "frequency_hz": 2411762000.0,
-        "power_dbm": -103.289665222
+        "frequency_hz": 2411981000.0,
+        "power_dbm": -100.919723511
       },
       {
-        "frequency_hz": 2412237000.0,
-        "power_dbm": -103.506500244
-      },
-      {
-        "frequency_hz": 2412371000.0,
-        "power_dbm": -103.520736694
+        "frequency_hz": 2412420000.0,
+        "power_dbm": -99.5896530151
       },
       {
         "frequency_hz": 2412530000.0,
-        "power_dbm": -102.556488037
+        "power_dbm": -99.5928192139
       },
       {
-        "frequency_hz": 2412627000.0,
-        "power_dbm": -101.80279541
-      },
-      {
-        "frequency_hz": 2412761000.0,
-        "power_dbm": -100.850540161
-      },
-      {
-        "frequency_hz": 2412932000.0,
-        "power_dbm": -103.13986969
+        "frequency_hz": 2412871000.0,
+        "power_dbm": -99.996887207
       },
       {
         "frequency_hz": 2413017000.0,
-        "power_dbm": -100.155822754
+        "power_dbm": -101.032119751
       },
       {
-        "frequency_hz": 2413237000.0,
-        "power_dbm": -101.954925537
+        "frequency_hz": 2413066000.0,
+        "power_dbm": -101.438537598
       },
       {
-        "frequency_hz": 2413468000.0,
-        "power_dbm": -103.66217804
+        "frequency_hz": 2413420000.0,
+        "power_dbm": -100.524459839
       },
       {
-        "frequency_hz": 2413627000.0,
-        "power_dbm": -102.812522888
+        "frequency_hz": 2413529000.0,
+        "power_dbm": -100.835617065
       },
       {
-        "frequency_hz": 2413761000.0,
-        "power_dbm": -100.80191803
-      },
-      {
-        "frequency_hz": 2413932000.0,
-        "power_dbm": -103.605834961
-      },
-      {
-        "frequency_hz": 2414005000.0,
-        "power_dbm": -102.722244263
-      },
-      {
-        "frequency_hz": 2414200000.0,
-        "power_dbm": -102.649078369
-      },
-      {
-        "frequency_hz": 2414468000.0,
-        "power_dbm": -104.293838501
+        "frequency_hz": 2414017000.0,
+        "power_dbm": -100.449729919
       },
       {
         "frequency_hz": 2414529000.0,
-        "power_dbm": -103.496589661
+        "power_dbm": -100.936767578
       },
       {
-        "frequency_hz": 2414760000.0,
-        "power_dbm": -100.984817505
+        "frequency_hz": 2414870000.0,
+        "power_dbm": -101.228118896
       },
       {
         "frequency_hz": 2415016000.0,
-        "power_dbm": -102.457580566
+        "power_dbm": -101.278244019
       },
       {
-        "frequency_hz": 2415236000.0,
-        "power_dbm": -102.356452942
+        "frequency_hz": 2428498000.0,
+        "power_dbm": -96.5098190308
       },
       {
-        "frequency_hz": 2415370000.0,
-        "power_dbm": -102.572532654
+        "frequency_hz": 2428559000.0,
+        "power_dbm": -97.1071395874
       },
       {
-        "frequency_hz": 2415638000.0,
-        "power_dbm": -102.13923645
+        "frequency_hz": 2428706000.0,
+        "power_dbm": -95.7051544189
       },
       {
-        "frequency_hz": 2415760000.0,
-        "power_dbm": -101.138877869
+        "frequency_hz": 2428828000.0,
+        "power_dbm": -92.2099914551
       },
       {
-        "frequency_hz": 2416235000.0,
-        "power_dbm": -103.784446716
+        "frequency_hz": 2428962000.0,
+        "power_dbm": -95.8772583008
       },
       {
-        "frequency_hz": 2416430000.0,
-        "power_dbm": -104.267555237
+        "frequency_hz": 2429108000.0,
+        "power_dbm": -93.5246505737
+      },
+      {
+        "frequency_hz": 2429193000.0,
+        "power_dbm": -94.8586730957
+      },
+      {
+        "frequency_hz": 2429266000.0,
+        "power_dbm": -95.4235458374
+      },
+      {
+        "frequency_hz": 2429340000.0,
+        "power_dbm": -94.9736938477
+      },
+      {
+        "frequency_hz": 2429413000.0,
+        "power_dbm": -97.2906265259
+      },
+      {
+        "frequency_hz": 2429498000.0,
+        "power_dbm": -96.3664932251
+      },
+      {
+        "frequency_hz": 2429559000.0,
+        "power_dbm": -100.291503906
       }
     ],
     "config": "2.440GHz_Spur_RBW0.020MHz_Limit-122.00dBm",
     "timings": {
-      "VSG_config": 3.905416400055401,
-      "VSA_config": 0.32242280000355095,
-      "measure": 8.879493799991906,
-      "get_results": 0.4045930000138469
+      "VSG_config": 3.8824999000062235,
+      "VSA_config": 0.3559283000067808,
+      "measure": 8.872491599991918,
+      "get_results": 0.4121764000155963
     }
   },
   {
@@ -442,212 +442,212 @@
     "power_dbm": -70,
     "spurs": [
       {
-        "frequency_hz": 1242117000.0,
-        "power_dbm": -105.538238525
+        "frequency_hz": 1256401000.0,
+        "power_dbm": -105.877494812
       },
       {
-        "frequency_hz": 1298384000.0,
-        "power_dbm": -105.7032547
+        "frequency_hz": 1257099000.0,
+        "power_dbm": -105.728813171
       },
       {
-        "frequency_hz": 1302534000.0,
-        "power_dbm": -105.815452576
+        "frequency_hz": 1321591000.0,
+        "power_dbm": -105.296844482
       },
       {
-        "frequency_hz": 1309914000.0,
-        "power_dbm": -105.253959656
+        "frequency_hz": 1375618000.0,
+        "power_dbm": -105.660232544
       },
       {
-        "frequency_hz": 1324945000.0,
-        "power_dbm": -105.948242188
+        "frequency_hz": 1380391000.0,
+        "power_dbm": -105.929168701
       },
       {
-        "frequency_hz": 1354883000.0,
-        "power_dbm": -105.929763794
+        "frequency_hz": 1395128000.0,
+        "power_dbm": -105.838867188
       },
       {
-        "frequency_hz": 1373207000.0,
-        "power_dbm": -105.770721436
+        "frequency_hz": 1396034000.0,
+        "power_dbm": -105.804534912
       },
       {
-        "frequency_hz": 1374834000.0,
-        "power_dbm": -105.315986633
-      },
-      {
-        "frequency_hz": 1383745000.0,
-        "power_dbm": -105.915390015
-      },
-      {
-        "frequency_hz": 1383965000.0,
-        "power_dbm": -105.792419434
-      },
-      {
-        "frequency_hz": 1393586000.0,
-        "power_dbm": -106.078140259
-      },
-      {
-        "frequency_hz": 1406254000.0,
-        "power_dbm": -105.617485046
-      },
-      {
-        "frequency_hz": 1406744000.0,
-        "power_dbm": -105.965133667
-      },
-      {
-        "frequency_hz": 1407001000.0,
-        "power_dbm": -105.492477417
-      },
-      {
-        "frequency_hz": 1409082000.0,
-        "power_dbm": -105.323738098
-      },
-      {
-        "frequency_hz": 1438029000.0,
-        "power_dbm": -105.918426514
-      },
-      {
-        "frequency_hz": 1440967000.0,
-        "power_dbm": -105.842086792
+        "frequency_hz": 1445911000.0,
+        "power_dbm": -105.508300781
       },
       {
         "frequency_hz": 1450000000.0,
-        "power_dbm": -80.7945556641
+        "power_dbm": -80.6433868408
       },
       {
-        "frequency_hz": 1455165000.0,
-        "power_dbm": -105.757278442
+        "frequency_hz": 1499326000.0,
+        "power_dbm": -105.688117981
       },
       {
-        "frequency_hz": 1487711000.0,
-        "power_dbm": -105.965293884
+        "frequency_hz": 1518531000.0,
+        "power_dbm": -105.261047363
       },
       {
-        "frequency_hz": 1567931000.0,
-        "power_dbm": -105.40397644
+        "frequency_hz": 1621052000.0,
+        "power_dbm": -105.848365784
       },
       {
-        "frequency_hz": 1575679000.0,
-        "power_dbm": -106.112350464
+        "frequency_hz": 1630550000.0,
+        "power_dbm": -105.793579102
       },
       {
-        "frequency_hz": 1578286000.0,
-        "power_dbm": -105.964981079
+        "frequency_hz": 1652153000.0,
+        "power_dbm": -104.983604431
       },
       {
-        "frequency_hz": 1587637000.0,
-        "power_dbm": -105.822296143
+        "frequency_hz": 1654552000.0,
+        "power_dbm": -105.576416016
       },
       {
-        "frequency_hz": 1608996000.0,
-        "power_dbm": -106.098960876
+        "frequency_hz": 1684503000.0,
+        "power_dbm": -105.662368774
       },
       {
-        "frequency_hz": 1614491000.0,
-        "power_dbm": -105.615478516
+        "frequency_hz": 1691921000.0,
+        "power_dbm": -104.543289185
       },
       {
-        "frequency_hz": 1634075000.0,
-        "power_dbm": -106.047111511
+        "frequency_hz": 1694724000.0,
+        "power_dbm": -105.852783203
       },
       {
-        "frequency_hz": 1683255000.0,
-        "power_dbm": -105.978027344
+        "frequency_hz": 1752790000.0,
+        "power_dbm": -105.844322205
       },
       {
-        "frequency_hz": 1686853000.0,
-        "power_dbm": -106.067581177
+        "frequency_hz": 1797637000.0,
+        "power_dbm": -105.660484314
       },
       {
-        "frequency_hz": 1785837000.0,
-        "power_dbm": -105.862937927
+        "frequency_hz": 1853365000.0,
+        "power_dbm": -105.755767822
       },
       {
-        "frequency_hz": 1786437000.0,
-        "power_dbm": -105.914421082
+        "frequency_hz": 1905739000.0,
+        "power_dbm": -105.592338562
       },
       {
-        "frequency_hz": 1803181000.0,
-        "power_dbm": -105.713920593
-      },
-      {
-        "frequency_hz": 1852288000.0,
-        "power_dbm": -105.815536499
+        "frequency_hz": 1949876000.0,
+        "power_dbm": -103.798599243
       },
       {
         "frequency_hz": 1949999000.0,
-        "power_dbm": -56.2164268494
+        "power_dbm": -56.1902809143
       },
       {
-        "frequency_hz": 1950133000.0,
-        "power_dbm": -104.449790955
+        "frequency_hz": 1950121000.0,
+        "power_dbm": -104.465370178
       },
       {
-        "frequency_hz": 1963928000.0,
-        "power_dbm": -105.246612549
+        "frequency_hz": 1989032000.0,
+        "power_dbm": -105.842765808
       },
       {
-        "frequency_hz": 1985360000.0,
-        "power_dbm": -105.407371521
+        "frequency_hz": 1994894000.0,
+        "power_dbm": -105.169212341
       },
       {
-        "frequency_hz": 2040916000.0,
-        "power_dbm": -105.863426208
+        "frequency_hz": 2016363000.0,
+        "power_dbm": -105.033828735
       },
       {
-        "frequency_hz": 2059215000.0,
-        "power_dbm": -105.747894287
+        "frequency_hz": 2033952000.0,
+        "power_dbm": -105.813919067
       },
       {
-        "frequency_hz": 2070182000.0,
-        "power_dbm": -106.013778687
+        "frequency_hz": 2181638000.0,
+        "power_dbm": -105.472648621
       },
       {
-        "frequency_hz": 2190010000.0,
-        "power_dbm": -106.098258972
+        "frequency_hz": 2188713000.0,
+        "power_dbm": -105.879699707
       },
       {
-        "frequency_hz": 2193511000.0,
-        "power_dbm": -104.670806885
+        "frequency_hz": 2229765000.0,
+        "power_dbm": -104.567276001
       },
       {
-        "frequency_hz": 2266448000.0,
-        "power_dbm": -105.576179504
+        "frequency_hz": 2256179000.0,
+        "power_dbm": -105.894355774
       },
       {
-        "frequency_hz": 2306815000.0,
-        "power_dbm": -105.272880554
+        "frequency_hz": 2260745000.0,
+        "power_dbm": -105.494888306
       },
       {
-        "frequency_hz": 2320879000.0,
-        "power_dbm": -105.731254578
+        "frequency_hz": 2367342000.0,
+        "power_dbm": -105.904815674
       },
       {
-        "frequency_hz": 2376509000.0,
-        "power_dbm": -106.090126038
+        "frequency_hz": 2393511000.0,
+        "power_dbm": -105.784164429
       },
       {
-        "frequency_hz": 2379630000.0,
-        "power_dbm": -106.066116333
+        "frequency_hz": 2399998000.0,
+        "power_dbm": -105.563316345
       },
       {
-        "frequency_hz": 2379704000.0,
-        "power_dbm": -106.091629028
+        "frequency_hz": 2400867000.0,
+        "power_dbm": -105.391914368
       },
       {
-        "frequency_hz": 2380671000.0,
-        "power_dbm": -106.03162384
+        "frequency_hz": 2411442000.0,
+        "power_dbm": -103.174110413
       },
       {
-        "frequency_hz": 2397097000.0,
-        "power_dbm": -105.81427002
+        "frequency_hz": 2411503000.0,
+        "power_dbm": -98.4003372192
+      },
+      {
+        "frequency_hz": 2411650000.0,
+        "power_dbm": -99.0092773438
+      },
+      {
+        "frequency_hz": 2411748000.0,
+        "power_dbm": -96.1377563477
+      },
+      {
+        "frequency_hz": 2411834000.0,
+        "power_dbm": -93.646987915
+      },
+      {
+        "frequency_hz": 2412066000.0,
+        "power_dbm": -96.4326934814
+      },
+      {
+        "frequency_hz": 2412176000.0,
+        "power_dbm": -95.2870788574
+      },
+      {
+        "frequency_hz": 2412225000.0,
+        "power_dbm": -96.1174850464
+      },
+      {
+        "frequency_hz": 2412360000.0,
+        "power_dbm": -97.2238616943
+      },
+      {
+        "frequency_hz": 2412446000.0,
+        "power_dbm": -100.669776917
+      },
+      {
+        "frequency_hz": 2412507000.0,
+        "power_dbm": -99.6464309692
+      },
+      {
+        "frequency_hz": 2436987000.0,
+        "power_dbm": -103.869346619
       }
     ],
     "config": "2.450GHz_Spur_RBW0.020MHz_Limit-122.00dBm",
     "timings": {
-      "VSG_config": 3.906223499972839,
-      "VSA_config": 0.3576520000351593,
-      "measure": 8.862843300041277,
-      "get_results": 0.40725170000223443
+      "VSG_config": 3.89321840001503,
+      "VSA_config": 0.35850239999126643,
+      "measure": 8.859917199995834,
+      "get_results": 0.41372740000952035
     }
   }
 ]

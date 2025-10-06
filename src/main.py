@@ -17,13 +17,21 @@ from src.utils.utils import method_timer
 logger = logging.getLogger(__name__)
 log_dir = os.path.join(os.path.dirname(__file__), '..', 'logs')
 os.makedirs(log_dir, exist_ok=True)
+
+# Create file handler for logging to project.log (DEBUG level)
+file_handler = logging.FileHandler(os.path.join(log_dir, 'project.log'))
+file_handler.setLevel(logging.DEBUG)
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+
+# Create console handler for output to console (INFO level)
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.INFO)  # Only show INFO and above in console
+console_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+
+# Configure the root logger
 logging.basicConfig(
-    level=logging.DEBUG,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler(os.path.join(log_dir, 'project.log')),
-        logging.StreamHandler()
-    ]
+    level=logging.DEBUG,  # Set the root logger to DEBUG to capture all messages
+    handlers=[file_handler, console_handler]  # Use both handlers
 )
 
 results = []
