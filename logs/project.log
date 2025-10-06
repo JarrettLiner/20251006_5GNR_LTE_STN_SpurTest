@@ -1,0 +1,1132 @@
+2025-10-06 09:54:54,181 - INFO - Starting RF measurement script
+2025-10-06 09:54:54,182 - INFO - Loaded test inputs from C:\Users\LINER\Documents\PycharmProjects\20251006_5GNR_LTE_STN_SpurTest\src\test_inputs.json
+2025-10-06 09:54:54,182 - DEBUG - Test inputs: {
+  "lte": [
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        6.201,
+        6.501
+      ],
+      "power_dbm": [
+        -10.0,
+        -8.0
+      ],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.dfl"
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        6.123,
+        6.423
+      ],
+      "power_dbm": [
+        -12.0,
+        -11.0,
+        -10.0
+      ],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.dfl"
+    }
+  ],
+  "nr5g": [
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        6.123,
+        6.223
+      ],
+      "power_dbm": [
+        -20,
+        -16,
+        -12,
+        -8,
+        -4,
+        0,
+        4,
+        8,
+        10
+      ],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/5GNR/Qorvo_EVM_opt/5GNR_UL_10MHz_256QAM_30kHz_24RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/5GNR_UL_10MHz_256QAM_30kHz_24RB_0RBO.dfl"
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        6.123,
+        6.223
+      ],
+      "power_dbm": [
+        -20,
+        -16,
+        -12,
+        -8,
+        -4,
+        0,
+        4,
+        8,
+        10
+      ],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/5GNR/Qorvo_EVM_opt/5GNR_UL_100MHz_256QAM_60kHz_135RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/5GNR_UL_100MHz_256QAM_60kHz_135RB_0RBO.dfl"
+    }
+  ],
+  "STN": [
+    {
+      "run": true,
+      "center_frequency_ghz": {
+        "range": {
+          "start_ghz": 0.717,
+          "stop_ghz": 0.72,
+          "step_mhz": 10
+        }
+      },
+      "iterations": 1
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": {
+        "range": {
+          "start_ghz": 2.4,
+          "stop_ghz": 2.481,
+          "step_mhz": 5
+        }
+      },
+      "iterations": 5
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        2.483,
+        5.75
+      ],
+      "iterations": 10
+    }
+  ],
+  "spur_search": [
+    {
+      "run": false,
+      "fundamental_frequency_ghz": [
+        2.43,
+        2.44,
+        2.45
+      ],
+      "rbw_mhz": 0.02,
+      "spur_limit_dbm": -122,
+      "power_dbm": -70
+    },
+    {
+      "run": false,
+      "fundamental_frequency_ghz": {
+        "range": {
+          "start_ghz": 2.4,
+          "stop_ghz": 2.481,
+          "step_mhz": 20
+        }
+      },
+      "rbw_mhz": 0.02,
+      "spur_limit_dbm": -122,
+      "power_dbm": -70
+    }
+  ]
+}
+2025-10-06 09:54:54,182 - DEBUG - Processing STN test: {'run': True, 'center_frequency_ghz': {'range': {'start_ghz': 0.717, 'stop_ghz': 0.72, 'step_mhz': 10}}, 'iterations': 1}
+2025-10-06 09:54:54,183 - INFO - Generated 1 frequencies: [0.717] GHz
+2025-10-06 09:54:54,183 - INFO - Preparing STN test set 1 at 0.717 GHz
+2025-10-06 09:54:54,183 - DEBUG - Initializing new STN instrument
+2025-10-06 09:54:54,183 - INFO - Initializing STN driver with freq=0.717GHz
+2025-10-06 09:54:54,187 - INFO - Connected to 192.168.200.20:5025
+2025-10-06 09:54:54,187 - INFO - Query: *IDN?
+2025-10-06 09:54:54,198 - INFO - Response: Rohde&Schwarz,FSW-50,1331.5003K50/101878,6.20
+2025-10-06 09:54:54,200 - INFO - Connected to 192.168.200.10:5025
+2025-10-06 09:54:54,201 - INFO - Query: *IDN?
+2025-10-06 09:54:54,201 - INFO - Response: Rohde&Schwarz,SMW200A,1412.0000K02/111891,5.30.305.48
+2025-10-06 09:54:54,202 - INFO - Write: OUTP:STAT OFF
+2025-10-06 09:54:54,202 - DEBUG - Starting STN test set 1: freq=0.717GHz, iterations=1
+2025-10-06 09:54:54,202 - DEBUG - Calling VSA_Config
+2025-10-06 09:54:54,202 - INFO - Configuring VSA for STN
+2025-10-06 09:54:54,202 - INFO - Query: *RST;*OPC?
+2025-10-06 09:54:54,560 - INFO - Response: 1
+2025-10-06 09:54:54,560 - INFO - Query: :INST:SEL "Spectrum";*OPC?
+2025-10-06 09:54:54,561 - INFO - Response: 1
+2025-10-06 09:54:54,561 - INFO - Write: :SENS:FREQ:CENT 717000000.0
+2025-10-06 09:54:54,561 - INFO - Write: :SENS:FREQ:SPAN 1e9
+2025-10-06 09:54:54,561 - INFO - Write: :INP:GAIN:STAT ON
+2025-10-06 09:54:54,561 - INFO - Write: :INP:GAIN:VAL 30
+2025-10-06 09:54:54,561 - INFO - Write: :INP:ATT:AUTO OFF
+2025-10-06 09:54:54,562 - INFO - Write: :INP:ATT 0
+2025-10-06 09:54:54,562 - INFO - Write: :SENS:SWE:WIND:POIN 2001
+2025-10-06 09:54:54,562 - INFO - Write: DISP:WIND1:SUBW:TRAC1:MODE WRIT
+2025-10-06 09:54:54,562 - INFO - Write: :SENS:WIND1:DET:FUNC RMS
+2025-10-06 09:54:54,562 - INFO - Write: SENS:BAND:RES 10000.0
+2025-10-06 09:54:54,562 - INFO - Write: SENS:BAND:VID 10000.0
+2025-10-06 09:54:54,562 - INFO - Write: SENS:SWE:TIME:AUTO OFF
+2025-10-06 09:54:54,562 - INFO - Write: SENS:SWE:TIME 0.005
+2025-10-06 09:54:54,562 - INFO - Write: SENS:SWE:TYPE AUTO
+2025-10-06 09:54:54,562 - INFO - Write: :SENS:SWE:OPT AUTO
+2025-10-06 09:54:54,562 - INFO - Query: DISP:WIND1:SUBW:TRAC1:Y:SCAL:AUTO ONCE;*OPC?
+2025-10-06 09:54:54,700 - INFO - Response: 1
+2025-10-06 09:54:54,700 - INFO - Write: SENS:POW:NCOR ON
+2025-10-06 09:54:54,700 - INFO - Query: INIT:IMM;*OPC?
+2025-10-06 09:54:54,754 - INFO - Response: 1
+2025-10-06 09:54:54,754 - INFO - Query: DISP:WIND1:SUBW:TRAC1:Y:SCAL:AUTO ONCE;*OPC?
+2025-10-06 09:54:54,759 - INFO - Response: 1
+2025-10-06 09:54:54,759 - INFO - Configuring noise marker for STN
+2025-10-06 09:54:54,759 - INFO - Write: :CALC1:DELT1:FUNC:PNO:STAT OFF
+2025-10-06 09:54:54,759 - INFO - Write: :CALC1:MARK1:FUNC:NOIS:STAT ON
+2025-10-06 09:54:54,760 - INFO - Write: :CALC1:MARK1:X 717000000.0
+2025-10-06 09:54:54,760 - INFO - Clearing error queue
+2025-10-06 09:54:54,760 - INFO - Query: :SYST:ERR?
+2025-10-06 09:54:54,867 - INFO - Response: 0,"No error"
+2025-10-06 09:54:54,868 - DEBUG - Running STN iteration 1
+2025-10-06 09:54:54,868 - INFO - Performing VSA sweep for STN noise marker
+2025-10-06 09:54:54,868 - INFO - Write: INIT:CONT OFF
+2025-10-06 09:54:54,869 - INFO - Query: INIT:IMM;*OPC?
+2025-10-06 09:54:57,210 - INFO - Response: 1
+2025-10-06 09:54:57,211 - INFO - Query: :CALC:MARK:FUNC:NOIS:RES?
+2025-10-06 09:54:57,212 - INFO - Response: -154.505525589
+2025-10-06 09:54:57,213 - INFO - Noise marker measured: -154.51 dBm
+2025-10-06 09:54:57,213 - INFO - STN iteration 1: marker=-154.51dBm, meas_time=2.345sec
+2025-10-06 09:54:57,213 - INFO - Closing VSA and VSG connections
+2025-10-06 09:54:57,214 - INFO - Socket closed
+2025-10-06 09:54:57,214 - INFO - Socket closed
+2025-10-06 09:54:57,214 - INFO - Connections closed successfully
+2025-10-06 09:54:57,214 - INFO - Socket closed
+2025-10-06 09:54:57,215 - INFO - Socket closed
+2025-10-06 09:54:57,219 - INFO - Saved results to: C:\Users\LINER\Documents\PycharmProjects\20251006_5GNR_LTE_STN_SpurTest\src\results_output.json
+2025-10-06 09:54:57,493 - INFO - Successfully saved to: C:\Users\LINER\Documents\PycharmProjects\20251006_5GNR_LTE_STN_SpurTest\src\results_output.xlsx
+2025-10-06 09:55:38,148 - INFO - Starting RF measurement script
+2025-10-06 09:55:38,157 - INFO - Loaded test inputs from C:\Users\LINER\Documents\PycharmProjects\20251006_5GNR_LTE_STN_SpurTest\src\test_inputs.json
+2025-10-06 09:55:38,157 - DEBUG - Test inputs: {
+  "lte": [
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        6.201,
+        6.501
+      ],
+      "power_dbm": [
+        -10.0,
+        -8.0
+      ],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.dfl"
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        6.123,
+        6.423
+      ],
+      "power_dbm": [
+        -12.0,
+        -11.0,
+        -10.0
+      ],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.dfl"
+    }
+  ],
+  "nr5g": [
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        6.123,
+        6.223
+      ],
+      "power_dbm": [
+        -20,
+        -16,
+        -12,
+        -8,
+        -4,
+        0,
+        4,
+        8,
+        10
+      ],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/5GNR/Qorvo_EVM_opt/5GNR_UL_10MHz_256QAM_30kHz_24RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/5GNR_UL_10MHz_256QAM_30kHz_24RB_0RBO.dfl"
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        6.123,
+        6.223
+      ],
+      "power_dbm": [
+        -20,
+        -16,
+        -12,
+        -8,
+        -4,
+        0,
+        4,
+        8,
+        10
+      ],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/5GNR/Qorvo_EVM_opt/5GNR_UL_100MHz_256QAM_60kHz_135RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/5GNR_UL_100MHz_256QAM_60kHz_135RB_0RBO.dfl"
+    }
+  ],
+  "STN": [
+    {
+      "run": true,
+      "center_frequency_ghz": {
+        "range": {
+          "start_ghz": 0.717,
+          "stop_ghz": 0.75,
+          "step_mhz": 10
+        }
+      },
+      "iterations": 1
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": {
+        "range": {
+          "start_ghz": 2.4,
+          "stop_ghz": 2.481,
+          "step_mhz": 5
+        }
+      },
+      "iterations": 5
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        2.483,
+        5.75
+      ],
+      "iterations": 10
+    }
+  ],
+  "spur_search": [
+    {
+      "run": false,
+      "fundamental_frequency_ghz": [
+        2.43,
+        2.44,
+        2.45
+      ],
+      "rbw_mhz": 0.02,
+      "spur_limit_dbm": -122,
+      "power_dbm": -70
+    },
+    {
+      "run": false,
+      "fundamental_frequency_ghz": {
+        "range": {
+          "start_ghz": 2.4,
+          "stop_ghz": 2.481,
+          "step_mhz": 20
+        }
+      },
+      "rbw_mhz": 0.02,
+      "spur_limit_dbm": -122,
+      "power_dbm": -70
+    }
+  ]
+}
+2025-10-06 09:55:38,157 - DEBUG - Processing STN test: {'run': True, 'center_frequency_ghz': {'range': {'start_ghz': 0.717, 'stop_ghz': 0.75, 'step_mhz': 10}}, 'iterations': 1}
+2025-10-06 09:55:38,157 - INFO - Generated 4 frequencies: [0.717, 0.728, 0.739, 0.75] GHz
+2025-10-06 09:55:38,157 - INFO - Preparing STN test set 1 at 0.717 GHz
+2025-10-06 09:55:38,157 - DEBUG - Initializing new STN instrument
+2025-10-06 09:55:38,157 - INFO - Initializing STN driver with freq=0.717GHz
+2025-10-06 09:55:38,161 - INFO - Connected to 192.168.200.20:5025
+2025-10-06 09:55:38,161 - INFO - Query: *IDN?
+2025-10-06 09:55:38,167 - INFO - Response: Rohde&Schwarz,FSW-50,1331.5003K50/101878,6.20
+2025-10-06 09:55:38,168 - INFO - Connected to 192.168.200.10:5025
+2025-10-06 09:55:38,168 - INFO - Query: *IDN?
+2025-10-06 09:55:38,169 - INFO - Response: Rohde&Schwarz,SMW200A,1412.0000K02/111891,5.30.305.48
+2025-10-06 09:55:38,169 - INFO - Write: OUTP:STAT OFF
+2025-10-06 09:55:38,169 - DEBUG - Starting STN test set 1: freq=0.717GHz, iterations=1
+2025-10-06 09:55:38,169 - DEBUG - Calling VSA_Config
+2025-10-06 09:55:38,169 - INFO - Configuring VSA for STN
+2025-10-06 09:55:38,169 - INFO - Query: *RST;*OPC?
+2025-10-06 09:55:38,485 - INFO - Response: 1
+2025-10-06 09:55:38,485 - INFO - Query: :INST:SEL "Spectrum";*OPC?
+2025-10-06 09:55:38,486 - INFO - Response: 1
+2025-10-06 09:55:38,486 - INFO - Write: :SENS:FREQ:CENT 717000000.0
+2025-10-06 09:55:38,487 - INFO - Write: :SENS:FREQ:SPAN 1e9
+2025-10-06 09:55:38,487 - INFO - Write: :INP:GAIN:STAT ON
+2025-10-06 09:55:38,487 - INFO - Write: :INP:GAIN:VAL 30
+2025-10-06 09:55:38,487 - INFO - Write: :INP:ATT:AUTO OFF
+2025-10-06 09:55:38,487 - INFO - Write: :INP:ATT 0
+2025-10-06 09:55:38,487 - INFO - Write: :SENS:SWE:WIND:POIN 2001
+2025-10-06 09:55:38,487 - INFO - Write: DISP:WIND1:SUBW:TRAC1:MODE WRIT
+2025-10-06 09:55:38,487 - INFO - Write: :SENS:WIND1:DET:FUNC RMS
+2025-10-06 09:55:38,487 - INFO - Write: SENS:BAND:RES 10000.0
+2025-10-06 09:55:38,487 - INFO - Write: SENS:BAND:VID 10000.0
+2025-10-06 09:55:38,487 - INFO - Write: SENS:SWE:TIME:AUTO OFF
+2025-10-06 09:55:38,487 - INFO - Write: SENS:SWE:TIME 0.005
+2025-10-06 09:55:38,487 - INFO - Write: SENS:SWE:TYPE AUTO
+2025-10-06 09:55:38,488 - INFO - Write: :SENS:SWE:OPT AUTO
+2025-10-06 09:55:38,488 - INFO - Query: DISP:WIND1:SUBW:TRAC1:Y:SCAL:AUTO ONCE;*OPC?
+2025-10-06 09:55:38,635 - INFO - Response: 1
+2025-10-06 09:55:38,635 - INFO - Write: SENS:POW:NCOR ON
+2025-10-06 09:55:38,635 - INFO - Query: INIT:IMM;*OPC?
+2025-10-06 09:55:38,682 - INFO - Response: 1
+2025-10-06 09:55:38,683 - INFO - Query: DISP:WIND1:SUBW:TRAC1:Y:SCAL:AUTO ONCE;*OPC?
+2025-10-06 09:55:38,686 - INFO - Response: 1
+2025-10-06 09:55:38,687 - INFO - Configuring noise marker for STN
+2025-10-06 09:55:38,687 - INFO - Write: :CALC1:DELT1:FUNC:PNO:STAT OFF
+2025-10-06 09:55:38,687 - INFO - Write: :CALC1:MARK1:FUNC:NOIS:STAT ON
+2025-10-06 09:55:38,687 - INFO - Write: :CALC1:MARK1:X 717000000.0
+2025-10-06 09:55:38,687 - INFO - Clearing error queue
+2025-10-06 09:55:38,687 - INFO - Query: :SYST:ERR?
+2025-10-06 09:55:38,791 - INFO - Response: 0,"No error"
+2025-10-06 09:55:38,791 - DEBUG - Running STN iteration 1
+2025-10-06 09:55:38,791 - INFO - Performing VSA sweep for STN noise marker
+2025-10-06 09:55:38,791 - INFO - Write: INIT:CONT OFF
+2025-10-06 09:55:38,791 - INFO - Query: INIT:IMM;*OPC?
+2025-10-06 09:55:41,132 - INFO - Response: 1
+2025-10-06 09:55:41,132 - INFO - Query: :CALC:MARK:FUNC:NOIS:RES?
+2025-10-06 09:55:41,134 - INFO - Response: -154.233966827
+2025-10-06 09:55:41,134 - INFO - Noise marker measured: -154.23 dBm
+2025-10-06 09:55:41,134 - INFO - STN iteration 1: marker=-154.23dBm, meas_time=2.343sec
+2025-10-06 09:55:41,134 - INFO - Closing VSA and VSG connections
+2025-10-06 09:55:41,134 - INFO - Socket closed
+2025-10-06 09:55:41,134 - INFO - Socket closed
+2025-10-06 09:55:41,134 - INFO - Connections closed successfully
+2025-10-06 09:55:41,134 - INFO - Socket closed
+2025-10-06 09:55:41,134 - INFO - Socket closed
+2025-10-06 09:55:41,134 - INFO - Preparing STN test set 2 at 0.728 GHz
+2025-10-06 09:55:41,134 - DEBUG - Initializing new STN instrument
+2025-10-06 09:55:41,135 - INFO - Initializing STN driver with freq=0.728GHz
+2025-10-06 09:55:41,137 - INFO - Connected to 192.168.200.20:5025
+2025-10-06 09:55:41,137 - INFO - Query: *IDN?
+2025-10-06 09:55:41,140 - INFO - Response: Rohde&Schwarz,FSW-50,1331.5003K50/101878,6.20
+2025-10-06 09:55:41,142 - INFO - Connected to 192.168.200.10:5025
+2025-10-06 09:55:41,142 - INFO - Query: *IDN?
+2025-10-06 09:55:41,143 - INFO - Response: Rohde&Schwarz,SMW200A,1412.0000K02/111891,5.30.305.48
+2025-10-06 09:55:41,143 - INFO - Write: OUTP:STAT OFF
+2025-10-06 09:55:41,143 - DEBUG - Starting STN test set 2: freq=0.728GHz, iterations=1
+2025-10-06 09:55:41,143 - DEBUG - Calling VSA_Config
+2025-10-06 09:55:41,143 - INFO - Configuring VSA for STN
+2025-10-06 09:55:41,143 - INFO - Query: *RST;*OPC?
+2025-10-06 09:55:41,499 - INFO - Response: 1
+2025-10-06 09:55:41,500 - INFO - Query: :INST:SEL "Spectrum";*OPC?
+2025-10-06 09:55:41,501 - INFO - Response: 1
+2025-10-06 09:55:41,501 - INFO - Write: :SENS:FREQ:CENT 728000000.0
+2025-10-06 09:55:41,501 - INFO - Write: :SENS:FREQ:SPAN 1e9
+2025-10-06 09:55:41,501 - INFO - Write: :INP:GAIN:STAT ON
+2025-10-06 09:55:41,501 - INFO - Write: :INP:GAIN:VAL 30
+2025-10-06 09:55:41,501 - INFO - Write: :INP:ATT:AUTO OFF
+2025-10-06 09:55:41,502 - INFO - Write: :INP:ATT 0
+2025-10-06 09:55:41,502 - INFO - Write: :SENS:SWE:WIND:POIN 2001
+2025-10-06 09:55:41,502 - INFO - Write: DISP:WIND1:SUBW:TRAC1:MODE WRIT
+2025-10-06 09:55:41,502 - INFO - Write: :SENS:WIND1:DET:FUNC RMS
+2025-10-06 09:55:41,502 - INFO - Write: SENS:BAND:RES 10000.0
+2025-10-06 09:55:41,502 - INFO - Write: SENS:BAND:VID 10000.0
+2025-10-06 09:55:41,502 - INFO - Write: SENS:SWE:TIME:AUTO OFF
+2025-10-06 09:55:41,502 - INFO - Write: SENS:SWE:TIME 0.005
+2025-10-06 09:55:41,502 - INFO - Write: SENS:SWE:TYPE AUTO
+2025-10-06 09:55:41,502 - INFO - Write: :SENS:SWE:OPT AUTO
+2025-10-06 09:55:41,502 - INFO - Query: DISP:WIND1:SUBW:TRAC1:Y:SCAL:AUTO ONCE;*OPC?
+2025-10-06 09:55:41,645 - INFO - Response: 1
+2025-10-06 09:55:41,645 - INFO - Write: SENS:POW:NCOR ON
+2025-10-06 09:55:41,646 - INFO - Query: INIT:IMM;*OPC?
+2025-10-06 09:55:41,699 - INFO - Response: 1
+2025-10-06 09:55:41,699 - INFO - Query: DISP:WIND1:SUBW:TRAC1:Y:SCAL:AUTO ONCE;*OPC?
+2025-10-06 09:55:41,703 - INFO - Response: 1
+2025-10-06 09:55:41,703 - INFO - Configuring noise marker for STN
+2025-10-06 09:55:41,703 - INFO - Write: :CALC1:DELT1:FUNC:PNO:STAT OFF
+2025-10-06 09:55:41,703 - INFO - Write: :CALC1:MARK1:FUNC:NOIS:STAT ON
+2025-10-06 09:55:41,703 - INFO - Write: :CALC1:MARK1:X 728000000.0
+2025-10-06 09:55:41,703 - INFO - Clearing error queue
+2025-10-06 09:55:41,703 - INFO - Query: :SYST:ERR?
+2025-10-06 09:55:41,796 - INFO - Response: 0,"No error"
+2025-10-06 09:55:41,796 - DEBUG - Running STN iteration 1
+2025-10-06 09:55:41,796 - INFO - Performing VSA sweep for STN noise marker
+2025-10-06 09:55:41,796 - INFO - Write: INIT:CONT OFF
+2025-10-06 09:55:41,796 - INFO - Query: INIT:IMM;*OPC?
+2025-10-06 09:55:44,138 - INFO - Response: 1
+2025-10-06 09:55:44,138 - INFO - Query: :CALC:MARK:FUNC:NOIS:RES?
+2025-10-06 09:55:44,139 - INFO - Response: -153.861280441
+2025-10-06 09:55:44,139 - INFO - Noise marker measured: -153.86 dBm
+2025-10-06 09:55:44,139 - INFO - STN iteration 1: marker=-153.86dBm, meas_time=2.343sec
+2025-10-06 09:55:44,139 - INFO - Closing VSA and VSG connections
+2025-10-06 09:55:44,140 - INFO - Socket closed
+2025-10-06 09:55:44,140 - INFO - Socket closed
+2025-10-06 09:55:44,140 - INFO - Connections closed successfully
+2025-10-06 09:55:44,140 - INFO - Socket closed
+2025-10-06 09:55:44,140 - INFO - Socket closed
+2025-10-06 09:55:44,140 - INFO - Preparing STN test set 3 at 0.739 GHz
+2025-10-06 09:55:44,140 - DEBUG - Initializing new STN instrument
+2025-10-06 09:55:44,140 - INFO - Initializing STN driver with freq=0.739GHz
+2025-10-06 09:55:44,143 - INFO - Connected to 192.168.200.20:5025
+2025-10-06 09:55:44,144 - INFO - Query: *IDN?
+2025-10-06 09:55:44,146 - INFO - Response: Rohde&Schwarz,FSW-50,1331.5003K50/101878,6.20
+2025-10-06 09:55:44,149 - INFO - Connected to 192.168.200.10:5025
+2025-10-06 09:55:44,149 - INFO - Query: *IDN?
+2025-10-06 09:55:44,150 - INFO - Response: Rohde&Schwarz,SMW200A,1412.0000K02/111891,5.30.305.48
+2025-10-06 09:55:44,150 - INFO - Write: OUTP:STAT OFF
+2025-10-06 09:55:44,150 - DEBUG - Starting STN test set 3: freq=0.739GHz, iterations=1
+2025-10-06 09:55:44,150 - DEBUG - Calling VSA_Config
+2025-10-06 09:55:44,150 - INFO - Configuring VSA for STN
+2025-10-06 09:55:44,150 - INFO - Query: *RST;*OPC?
+2025-10-06 09:55:44,506 - INFO - Response: 1
+2025-10-06 09:55:44,506 - INFO - Query: :INST:SEL "Spectrum";*OPC?
+2025-10-06 09:55:44,507 - INFO - Response: 1
+2025-10-06 09:55:44,507 - INFO - Write: :SENS:FREQ:CENT 739000000.0
+2025-10-06 09:55:44,507 - INFO - Write: :SENS:FREQ:SPAN 1e9
+2025-10-06 09:55:44,507 - INFO - Write: :INP:GAIN:STAT ON
+2025-10-06 09:55:44,508 - INFO - Write: :INP:GAIN:VAL 30
+2025-10-06 09:55:44,508 - INFO - Write: :INP:ATT:AUTO OFF
+2025-10-06 09:55:44,508 - INFO - Write: :INP:ATT 0
+2025-10-06 09:55:44,508 - INFO - Write: :SENS:SWE:WIND:POIN 2001
+2025-10-06 09:55:44,508 - INFO - Write: DISP:WIND1:SUBW:TRAC1:MODE WRIT
+2025-10-06 09:55:44,508 - INFO - Write: :SENS:WIND1:DET:FUNC RMS
+2025-10-06 09:55:44,508 - INFO - Write: SENS:BAND:RES 10000.0
+2025-10-06 09:55:44,508 - INFO - Write: SENS:BAND:VID 10000.0
+2025-10-06 09:55:44,508 - INFO - Write: SENS:SWE:TIME:AUTO OFF
+2025-10-06 09:55:44,508 - INFO - Write: SENS:SWE:TIME 0.005
+2025-10-06 09:55:44,508 - INFO - Write: SENS:SWE:TYPE AUTO
+2025-10-06 09:55:44,508 - INFO - Write: :SENS:SWE:OPT AUTO
+2025-10-06 09:55:44,508 - INFO - Query: DISP:WIND1:SUBW:TRAC1:Y:SCAL:AUTO ONCE;*OPC?
+2025-10-06 09:55:44,652 - INFO - Response: 1
+2025-10-06 09:55:44,653 - INFO - Write: SENS:POW:NCOR ON
+2025-10-06 09:55:44,653 - INFO - Query: INIT:IMM;*OPC?
+2025-10-06 09:55:44,705 - INFO - Response: 1
+2025-10-06 09:55:44,705 - INFO - Query: DISP:WIND1:SUBW:TRAC1:Y:SCAL:AUTO ONCE;*OPC?
+2025-10-06 09:55:44,709 - INFO - Response: 1
+2025-10-06 09:55:44,709 - INFO - Configuring noise marker for STN
+2025-10-06 09:55:44,709 - INFO - Write: :CALC1:DELT1:FUNC:PNO:STAT OFF
+2025-10-06 09:55:44,710 - INFO - Write: :CALC1:MARK1:FUNC:NOIS:STAT ON
+2025-10-06 09:55:44,710 - INFO - Write: :CALC1:MARK1:X 739000000.0
+2025-10-06 09:55:44,710 - INFO - Clearing error queue
+2025-10-06 09:55:44,710 - INFO - Query: :SYST:ERR?
+2025-10-06 09:55:44,801 - INFO - Response: 0,"No error"
+2025-10-06 09:55:44,801 - DEBUG - Running STN iteration 1
+2025-10-06 09:55:44,801 - INFO - Performing VSA sweep for STN noise marker
+2025-10-06 09:55:44,801 - INFO - Write: INIT:CONT OFF
+2025-10-06 09:55:44,802 - INFO - Query: INIT:IMM;*OPC?
+2025-10-06 09:55:47,153 - INFO - Response: 1
+2025-10-06 09:55:47,153 - INFO - Query: :CALC:MARK:FUNC:NOIS:RES?
+2025-10-06 09:55:47,154 - INFO - Response: -153.458925247
+2025-10-06 09:55:47,154 - INFO - Noise marker measured: -153.46 dBm
+2025-10-06 09:55:47,154 - INFO - STN iteration 1: marker=-153.46dBm, meas_time=2.353sec
+2025-10-06 09:55:47,154 - INFO - Closing VSA and VSG connections
+2025-10-06 09:55:47,154 - INFO - Socket closed
+2025-10-06 09:55:47,155 - INFO - Socket closed
+2025-10-06 09:55:47,155 - INFO - Connections closed successfully
+2025-10-06 09:55:47,155 - INFO - Socket closed
+2025-10-06 09:55:47,155 - INFO - Socket closed
+2025-10-06 09:55:47,155 - INFO - Preparing STN test set 4 at 0.750 GHz
+2025-10-06 09:55:47,155 - DEBUG - Initializing new STN instrument
+2025-10-06 09:55:47,155 - INFO - Initializing STN driver with freq=0.750GHz
+2025-10-06 09:55:47,158 - INFO - Connected to 192.168.200.20:5025
+2025-10-06 09:55:47,158 - INFO - Query: *IDN?
+2025-10-06 09:55:47,160 - INFO - Response: Rohde&Schwarz,FSW-50,1331.5003K50/101878,6.20
+2025-10-06 09:55:47,162 - INFO - Connected to 192.168.200.10:5025
+2025-10-06 09:55:47,162 - INFO - Query: *IDN?
+2025-10-06 09:55:47,163 - INFO - Response: Rohde&Schwarz,SMW200A,1412.0000K02/111891,5.30.305.48
+2025-10-06 09:55:47,163 - INFO - Write: OUTP:STAT OFF
+2025-10-06 09:55:47,163 - DEBUG - Starting STN test set 4: freq=0.750GHz, iterations=1
+2025-10-06 09:55:47,163 - DEBUG - Calling VSA_Config
+2025-10-06 09:55:47,163 - INFO - Configuring VSA for STN
+2025-10-06 09:55:47,163 - INFO - Query: *RST;*OPC?
+2025-10-06 09:55:47,517 - INFO - Response: 1
+2025-10-06 09:55:47,518 - INFO - Query: :INST:SEL "Spectrum";*OPC?
+2025-10-06 09:55:47,518 - INFO - Response: 1
+2025-10-06 09:55:47,519 - INFO - Write: :SENS:FREQ:CENT 750000000.0
+2025-10-06 09:55:47,519 - INFO - Write: :SENS:FREQ:SPAN 1e9
+2025-10-06 09:55:47,519 - INFO - Write: :INP:GAIN:STAT ON
+2025-10-06 09:55:47,519 - INFO - Write: :INP:GAIN:VAL 30
+2025-10-06 09:55:47,519 - INFO - Write: :INP:ATT:AUTO OFF
+2025-10-06 09:55:47,519 - INFO - Write: :INP:ATT 0
+2025-10-06 09:55:47,519 - INFO - Write: :SENS:SWE:WIND:POIN 2001
+2025-10-06 09:55:47,519 - INFO - Write: DISP:WIND1:SUBW:TRAC1:MODE WRIT
+2025-10-06 09:55:47,519 - INFO - Write: :SENS:WIND1:DET:FUNC RMS
+2025-10-06 09:55:47,519 - INFO - Write: SENS:BAND:RES 10000.0
+2025-10-06 09:55:47,519 - INFO - Write: SENS:BAND:VID 10000.0
+2025-10-06 09:55:47,519 - INFO - Write: SENS:SWE:TIME:AUTO OFF
+2025-10-06 09:55:47,519 - INFO - Write: SENS:SWE:TIME 0.005
+2025-10-06 09:55:47,519 - INFO - Write: SENS:SWE:TYPE AUTO
+2025-10-06 09:55:47,519 - INFO - Write: :SENS:SWE:OPT AUTO
+2025-10-06 09:55:47,519 - INFO - Query: DISP:WIND1:SUBW:TRAC1:Y:SCAL:AUTO ONCE;*OPC?
+2025-10-06 09:55:47,655 - INFO - Response: 1
+2025-10-06 09:55:47,656 - INFO - Write: SENS:POW:NCOR ON
+2025-10-06 09:55:47,656 - INFO - Query: INIT:IMM;*OPC?
+2025-10-06 09:55:47,709 - INFO - Response: 1
+2025-10-06 09:55:47,710 - INFO - Query: DISP:WIND1:SUBW:TRAC1:Y:SCAL:AUTO ONCE;*OPC?
+2025-10-06 09:55:47,713 - INFO - Response: 1
+2025-10-06 09:55:47,714 - INFO - Configuring noise marker for STN
+2025-10-06 09:55:47,714 - INFO - Write: :CALC1:DELT1:FUNC:PNO:STAT OFF
+2025-10-06 09:55:47,714 - INFO - Write: :CALC1:MARK1:FUNC:NOIS:STAT ON
+2025-10-06 09:55:47,714 - INFO - Write: :CALC1:MARK1:X 750000000.0
+2025-10-06 09:55:47,714 - INFO - Clearing error queue
+2025-10-06 09:55:47,714 - INFO - Query: :SYST:ERR?
+2025-10-06 09:55:47,806 - INFO - Response: 0,"No error"
+2025-10-06 09:55:47,806 - DEBUG - Running STN iteration 1
+2025-10-06 09:55:47,806 - INFO - Performing VSA sweep for STN noise marker
+2025-10-06 09:55:47,806 - INFO - Write: INIT:CONT OFF
+2025-10-06 09:55:47,807 - INFO - Query: INIT:IMM;*OPC?
+2025-10-06 09:55:50,159 - INFO - Response: 1
+2025-10-06 09:55:50,159 - INFO - Query: :CALC:MARK:FUNC:NOIS:RES?
+2025-10-06 09:55:50,160 - INFO - Response: -153.084598541
+2025-10-06 09:55:50,160 - INFO - Noise marker measured: -153.08 dBm
+2025-10-06 09:55:50,160 - INFO - STN iteration 1: marker=-153.08dBm, meas_time=2.354sec
+2025-10-06 09:55:50,161 - INFO - Closing VSA and VSG connections
+2025-10-06 09:55:50,161 - INFO - Socket closed
+2025-10-06 09:55:50,161 - INFO - Socket closed
+2025-10-06 09:55:50,161 - INFO - Connections closed successfully
+2025-10-06 09:55:50,161 - INFO - Socket closed
+2025-10-06 09:55:50,161 - INFO - Socket closed
+2025-10-06 09:55:50,163 - INFO - Saved results to: C:\Users\LINER\Documents\PycharmProjects\20251006_5GNR_LTE_STN_SpurTest\src\results_output.json
+2025-10-06 09:55:50,394 - INFO - Successfully saved to: C:\Users\LINER\Documents\PycharmProjects\20251006_5GNR_LTE_STN_SpurTest\src\results_output.xlsx
+2025-10-06 09:58:01,156 - INFO - Starting RF measurement script
+2025-10-06 09:58:01,158 - INFO - Loaded test inputs from C:\Users\LINER\Documents\PycharmProjects\20251006_5GNR_LTE_STN_SpurTest\src\test_inputs.json
+2025-10-06 09:58:01,159 - DEBUG - Test inputs: {
+  "lte": [
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        6.201,
+        6.501
+      ],
+      "power_dbm": [
+        -10.0,
+        -8.0
+      ],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.dfl"
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        6.123,
+        6.423
+      ],
+      "power_dbm": [
+        -12.0,
+        -11.0,
+        -10.0
+      ],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.dfl"
+    }
+  ],
+  "nr5g": [
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        6.123,
+        6.223
+      ],
+      "power_dbm": [
+        -20,
+        -16,
+        -12,
+        -8,
+        -4,
+        0,
+        4,
+        8,
+        10
+      ],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/5GNR/Qorvo_EVM_opt/5GNR_UL_10MHz_256QAM_30kHz_24RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/5GNR_UL_10MHz_256QAM_30kHz_24RB_0RBO.dfl"
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        6.123,
+        6.223
+      ],
+      "power_dbm": [
+        -20,
+        -16,
+        -12,
+        -8,
+        -4,
+        0,
+        4,
+        8,
+        10
+      ],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/5GNR/Qorvo_EVM_opt/5GNR_UL_100MHz_256QAM_60kHz_135RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/5GNR_UL_100MHz_256QAM_60kHz_135RB_0RBO.dfl"
+    }
+  ],
+  "STN": [
+    {
+      "run": false,
+      "center_frequency_ghz": {
+        "range": {
+          "start_ghz": 0.717,
+          "stop_ghz": 0.717,
+          "step_mhz": 10
+        }
+      },
+      "iterations": 1
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": {
+        "range": {
+          "start_ghz": 2.4,
+          "stop_ghz": 2.481,
+          "step_mhz": 5
+        }
+      },
+      "iterations": 5
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        2.483,
+        5.75
+      ],
+      "iterations": 10
+    }
+  ],
+  "spur_search": [
+    {
+      "run": true,
+      "fundamental_frequency_ghz": [
+        2.43,
+        2.44,
+        2.45
+      ],
+      "rbw_mhz": 0.02,
+      "spur_limit_dbm": -122,
+      "power_dbm": -70
+    },
+    {
+      "run": false,
+      "fundamental_frequency_ghz": {
+        "range": {
+          "start_ghz": 2.4,
+          "stop_ghz": 2.481,
+          "step_mhz": 20
+        }
+      },
+      "rbw_mhz": 0.02,
+      "spur_limit_dbm": -122,
+      "power_dbm": -70
+    }
+  ]
+}
+2025-10-06 09:58:01,159 - DEBUG - Processing SpurSearch test: {'run': True, 'fundamental_frequency_ghz': [2.43, 2.44, 2.45], 'rbw_mhz': 0.02, 'spur_limit_dbm': -122, 'power_dbm': -70}
+2025-10-06 09:58:01,159 - INFO - Initializing SpurSearch for 2.430 GHz
+2025-10-06 09:58:01,165 - INFO - Connected to 192.168.200.20:5025
+2025-10-06 09:58:01,165 - INFO - Query: *IDN?
+2025-10-06 09:58:01,171 - INFO - Response: Rohde&Schwarz,FSW-50,1331.5003K50/101878,6.20
+2025-10-06 09:58:01,174 - INFO - Connected to 192.168.200.10:5025
+2025-10-06 09:58:01,174 - INFO - Query: *IDN?
+2025-10-06 09:58:01,175 - INFO - Response: Rohde&Schwarz,SMW200A,1412.0000K02/111891,5.30.305.48
+2025-10-06 09:58:01,175 - INFO - SpurSearch initialized: fundamental=2.43 GHz, RBW=0.02 MHz, spur_limit=-122 dBm, VSG_power=-70 dBm
+2025-10-06 09:58:01,175 - INFO - Starting SpurSearch test set 1: fundamental=2.430 GHz, RBW=0.020 MHz, limit=-122.00 dBm, power=-70.00 dBm
+2025-10-06 09:58:01,175 - INFO - Query: *RST;*OPC?
+2025-10-06 09:58:02,681 - INFO - Response: 1
+2025-10-06 09:58:02,682 - INFO - Write: SOUR:FREQ:CW 2430000000
+2025-10-06 09:58:02,682 - INFO - Write: SOUR:POW:LEV:IMM:AMPL -70.00
+2025-10-06 09:58:02,682 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:MODE ARB
+2025-10-06 09:58:02,682 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:COUNt 4
+2025-10-06 09:58:02,682 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:FREQuency -1000000000
+2025-10-06 09:58:02,682 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier2:FREQuency -500000000
+2025-10-06 09:58:02,682 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier3:FREQuency 600000000
+2025-10-06 09:58:02,682 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier4:FREQuency 1000000000
+2025-10-06 09:58:02,682 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:POWer -45
+2025-10-06 09:58:02,682 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier2:POWer -20
+2025-10-06 09:58:02,682 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier3:POWer -25
+2025-10-06 09:58:02,683 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier4:POWer -50
+2025-10-06 09:58:02,683 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:STATe 1
+2025-10-06 09:58:02,683 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier2:STATe 1
+2025-10-06 09:58:02,683 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier3:STATe 1
+2025-10-06 09:58:02,683 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier4:STATe 1
+2025-10-06 09:58:02,683 - INFO - Query: SOURce1:BB:ARBitrary:MCARrier:CLOad;*OPC?
+2025-10-06 09:58:06,128 - INFO - Response: 1
+2025-10-06 09:58:06,128 - INFO - Write: SOURce1:BB:ARBitrary:TRIGger:OUTPut1:MODE REST
+2025-10-06 09:58:06,128 - INFO - Write: SOURce1:BB:ARBitrary:STATe 1
+2025-10-06 09:58:06,128 - INFO - Write: OUTPut1:STATe 1
+2025-10-06 09:58:06,128 - INFO - VSG set: frequency=2.430 GHz, power=-70.00 dBm
+2025-10-06 09:58:06,128 - INFO - Query: *RST;*OPC?
+2025-10-06 09:58:06,492 - INFO - Response: 1
+2025-10-06 09:58:06,493 - INFO - FSW reset for spur search
+2025-10-06 09:58:06,493 - INFO - Write: INIT:CONT OFF
+2025-10-06 09:58:06,493 - INFO - Write: SENS:FREQ:STAR 1215000000
+2025-10-06 09:58:06,493 - INFO - Write: SENS:FREQ:STOP 2429000000
+2025-10-06 09:58:06,493 - INFO - Write: :DISP:WIND1:SUBW:TRAC1:MODE AVER
+2025-10-06 09:58:06,493 - INFO - Write: :SENS:AVER:COUN 5
+2025-10-06 09:58:06,494 - INFO - Write: :SENS:WIND1:DET1:FUNC RMS
+2025-10-06 09:58:06,494 - INFO - Write: :SENS:LIST:RANG1:FILT:TYPE NORM
+2025-10-06 09:58:06,494 - INFO - Write: :SENS:BAND:RES 20000.0
+2025-10-06 09:58:06,494 - INFO - Write: :SENS:SWE:TIME:AUTO ON
+2025-10-06 09:58:06,494 - INFO - Write: SENS:SWE:TYPE FFT
+2025-10-06 09:58:06,494 - INFO - Write: SENS:SWE:OPT SPE
+2025-10-06 09:58:06,494 - INFO - Write: SENS:SWE:WIND1:POIN 100001
+2025-10-06 09:58:06,494 - INFO - Write: DISP:WIND1:TRAC:Y:SCAL:RLEV -30
+2025-10-06 09:58:06,494 - INFO - Write: SENS:INP:ATT:AUTO OFF
+2025-10-06 09:58:06,494 - INFO - Write: :INP:ATT 0   
+2025-10-06 09:58:06,495 - INFO - Write: INP:GAIN:STAT ON
+2025-10-06 09:58:06,495 - INFO - Write: INP:GAIN:VAL 30
+2025-10-06 09:58:06,495 - INFO - Write: SENS:POW:NCOR ON
+2025-10-06 09:58:06,495 - INFO - Write: CALC1:MARK1:FUNC:FPE:STAT ON
+2025-10-06 09:58:06,495 - INFO - Write: CALC1:MARK1:X:SLIM:LEFT 1215000000.0
+2025-10-06 09:58:06,495 - INFO - Write: CALC1:MARK1:X:SLIM:RIGH 4860000000.0
+2025-10-06 09:58:06,495 - INFO - Write: CALC1:THR -122
+2025-10-06 09:58:06,495 - INFO - Write: CALC1:MARK1:X:SLIM:STAT ON
+2025-10-06 09:58:06,495 - INFO - Write: CALC1:THR:STAT ON
+2025-10-06 09:58:06,495 - INFO - Spur detection table configured
+2025-10-06 09:58:06,495 - INFO - Range 1: 1.215–2.429 GHz
+2025-10-06 09:58:06,495 - INFO - Write: :INIT:CONT OFF
+2025-10-06 09:58:06,495 - INFO - Query: INIT:IMM;*OPC?
+2025-10-06 09:58:13,607 - INFO - Response: 1
+2025-10-06 09:58:13,607 - INFO - Spur search measurement completed
+2025-10-06 09:58:13,608 - INFO - Query: :CALC:MARK:FUNC:FPE:COUN?
+2025-10-06 09:58:13,615 - INFO - Response: 50
+2025-10-06 09:58:13,615 - INFO - Write: DISP:WIND1:SUBW:TRAC1:Y:SCAL:AUTO ONCE
+2025-10-06 09:58:13,615 - INFO - Query: :CALC:MARK:FUNC:FPE:X?
+2025-10-06 09:58:14,014 - INFO - Response: 1430003000,1929996000,2407215000,2407276000,2407676000,2407871000,2408077000,2408271000,2408320000,2408623000,2408672000,2408866000,2408975000,2409072000,2409279000,2409352000,2409424000,2409522000,2409667000,2409728000,2409874000,2410080000,2410274000,2410675000,2410736000,2410881000,2411075000,2411270000,2411670000,2412277000,2412678000,2412739000,2412872000,2413066000,2413273000,2413673000,2413734000,2413880000,2414074000,2414208000,2414268000,2414669000,2414875000,2415082000,2415276000,2415616000,2415676000,2415871000,2416271000,2416672000
+2025-10-06 09:58:14,014 - INFO - Query: :CALC:MARK:FUNC:FPE:Y?
+2025-10-06 09:58:14,015 - INFO - Response: -80.8797531128,-56.468421936,-101.627624512,-98.9778137207,-99.2260665894,-99.9798202515,-98.2994613647,-97.2070770264,-101.733261108,-102.615333557,-96.9605331421,-100.05783844,-102.234802246,-98.1557159424,-96.9428100586,-101.981689453,-101.823890686,-102.148933411,-97.9645462036,-99.7435836792,-98.5542221069,-98.7892608643,-96.1431732178,-98.8716201782,-102.448455811,-100.375640869,-98.9319000244,-97.2437667847,-100.42048645,-100.95149231,-98.5126037598,-102.292648315,-100.403778076,-102.105690002,-98.4063568115,-97.6702804565,-101.68321991,-101.172103882,-100.796638489,-101.450553894,-99.6001281738,-99.2814865112,-100.967750549,-102.501449585,-99.9040908813,-102.73021698,-99.6384735107,-101.154136658,-102.024963379,-101.233459473
+2025-10-06 09:58:14,015 - INFO - Spur 1: 1.430003 GHz, -80.88 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 2: 1.929996 GHz, -56.47 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 3: 2.407215 GHz, -101.63 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 4: 2.407276 GHz, -98.98 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 5: 2.407676 GHz, -99.23 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 6: 2.407871 GHz, -99.98 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 7: 2.408077 GHz, -98.30 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 8: 2.408271 GHz, -97.21 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 9: 2.408320 GHz, -101.73 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 10: 2.408623 GHz, -102.62 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 11: 2.408672 GHz, -96.96 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 12: 2.408866 GHz, -100.06 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 13: 2.408975 GHz, -102.23 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 14: 2.409072 GHz, -98.16 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 15: 2.409279 GHz, -96.94 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 16: 2.409352 GHz, -101.98 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 17: 2.409424 GHz, -101.82 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 18: 2.409522 GHz, -102.15 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 19: 2.409667 GHz, -97.96 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 20: 2.409728 GHz, -99.74 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 21: 2.409874 GHz, -98.55 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 22: 2.410080 GHz, -98.79 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 23: 2.410274 GHz, -96.14 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 24: 2.410675 GHz, -98.87 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 25: 2.410736 GHz, -102.45 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 26: 2.410881 GHz, -100.38 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 27: 2.411075 GHz, -98.93 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 28: 2.411270 GHz, -97.24 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 29: 2.411670 GHz, -100.42 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 30: 2.412277 GHz, -100.95 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 31: 2.412678 GHz, -98.51 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 32: 2.412739 GHz, -102.29 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 33: 2.412872 GHz, -100.40 dBm
+2025-10-06 09:58:14,016 - INFO - Spur 34: 2.413066 GHz, -102.11 dBm
+2025-10-06 09:58:14,017 - INFO - Spur 35: 2.413273 GHz, -98.41 dBm
+2025-10-06 09:58:14,017 - INFO - Spur 36: 2.413673 GHz, -97.67 dBm
+2025-10-06 09:58:14,017 - INFO - Spur 37: 2.413734 GHz, -101.68 dBm
+2025-10-06 09:58:14,017 - INFO - Spur 38: 2.413880 GHz, -101.17 dBm
+2025-10-06 09:58:14,017 - INFO - Spur 39: 2.414074 GHz, -100.80 dBm
+2025-10-06 09:58:14,017 - INFO - Spur 40: 2.414208 GHz, -101.45 dBm
+2025-10-06 09:58:14,018 - INFO - Spur 41: 2.414268 GHz, -99.60 dBm
+2025-10-06 09:58:14,018 - INFO - Spur 42: 2.414669 GHz, -99.28 dBm
+2025-10-06 09:58:14,019 - INFO - Spur 43: 2.414875 GHz, -100.97 dBm
+2025-10-06 09:58:14,019 - INFO - Spur 44: 2.415082 GHz, -102.50 dBm
+2025-10-06 09:58:14,019 - INFO - Spur 45: 2.415276 GHz, -99.90 dBm
+2025-10-06 09:58:14,019 - INFO - Spur 46: 2.415616 GHz, -102.73 dBm
+2025-10-06 09:58:14,019 - INFO - Spur 47: 2.415676 GHz, -99.64 dBm
+2025-10-06 09:58:14,019 - INFO - Spur 48: 2.415871 GHz, -101.15 dBm
+2025-10-06 09:58:14,019 - INFO - Spur 49: 2.416271 GHz, -102.02 dBm
+2025-10-06 09:58:14,019 - INFO - Spur 50: 2.416672 GHz, -101.23 dBm
+2025-10-06 09:58:14,019 - DEBUG - SpurSearch results for 2.430 GHz: [(1430003000.0, -80.8797531128), (1929996000.0, -56.468421936), (2407215000.0, -101.627624512), (2407276000.0, -98.9778137207), (2407676000.0, -99.2260665894), (2407871000.0, -99.9798202515), (2408077000.0, -98.2994613647), (2408271000.0, -97.2070770264), (2408320000.0, -101.733261108), (2408623000.0, -102.615333557), (2408672000.0, -96.9605331421), (2408866000.0, -100.05783844), (2408975000.0, -102.234802246), (2409072000.0, -98.1557159424), (2409279000.0, -96.9428100586), (2409352000.0, -101.981689453), (2409424000.0, -101.823890686), (2409522000.0, -102.148933411), (2409667000.0, -97.9645462036), (2409728000.0, -99.7435836792), (2409874000.0, -98.5542221069), (2410080000.0, -98.7892608643), (2410274000.0, -96.1431732178), (2410675000.0, -98.8716201782), (2410736000.0, -102.448455811), (2410881000.0, -100.375640869), (2411075000.0, -98.9319000244), (2411270000.0, -97.2437667847), (2411670000.0, -100.42048645), (2412277000.0, -100.95149231), (2412678000.0, -98.5126037598), (2412739000.0, -102.292648315), (2412872000.0, -100.403778076), (2413066000.0, -102.105690002), (2413273000.0, -98.4063568115), (2413673000.0, -97.6702804565), (2413734000.0, -101.68321991), (2413880000.0, -101.172103882), (2414074000.0, -100.796638489), (2414208000.0, -101.450553894), (2414268000.0, -99.6001281738), (2414669000.0, -99.2814865112), (2414875000.0, -100.967750549), (2415082000.0, -102.501449585), (2415276000.0, -99.9040908813), (2415616000.0, -102.73021698), (2415676000.0, -99.6384735107), (2415871000.0, -101.154136658), (2416271000.0, -102.024963379), (2416672000.0, -101.233459473)]
+2025-10-06 09:58:14,020 - INFO - Socket closed
+2025-10-06 09:58:14,020 - INFO - FSW connection closed
+2025-10-06 09:58:14,020 - INFO - Write: OUTP:STAT OFF
+2025-10-06 09:58:14,020 - INFO - Socket closed
+2025-10-06 09:58:14,020 - INFO - VSG connection closed
+2025-10-06 09:58:14,020 - INFO - Socket closed
+2025-10-06 09:58:14,020 - INFO - Socket closed
+2025-10-06 09:58:14,020 - INFO - Initializing SpurSearch for 2.440 GHz
+2025-10-06 09:58:14,023 - INFO - Connected to 192.168.200.20:5025
+2025-10-06 09:58:14,023 - INFO - Query: *IDN?
+2025-10-06 09:58:14,025 - INFO - Response: Rohde&Schwarz,FSW-50,1331.5003K50/101878,6.20
+2025-10-06 09:58:14,027 - INFO - Connected to 192.168.200.10:5025
+2025-10-06 09:58:14,028 - INFO - Query: *IDN?
+2025-10-06 09:58:14,030 - INFO - Response: Rohde&Schwarz,SMW200A,1412.0000K02/111891,5.30.305.48
+2025-10-06 09:58:14,030 - INFO - SpurSearch initialized: fundamental=2.44 GHz, RBW=0.02 MHz, spur_limit=-122 dBm, VSG_power=-70 dBm
+2025-10-06 09:58:14,030 - INFO - Starting SpurSearch test set 2: fundamental=2.440 GHz, RBW=0.020 MHz, limit=-122.00 dBm, power=-70.00 dBm
+2025-10-06 09:58:14,030 - INFO - Query: *RST;*OPC?
+2025-10-06 09:58:15,097 - INFO - Response: 1
+2025-10-06 09:58:15,098 - INFO - Write: SOUR:FREQ:CW 2440000000
+2025-10-06 09:58:15,098 - INFO - Write: SOUR:POW:LEV:IMM:AMPL -70.00
+2025-10-06 09:58:15,098 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:MODE ARB
+2025-10-06 09:58:15,099 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:COUNt 4
+2025-10-06 09:58:15,100 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:FREQuency -1000000000
+2025-10-06 09:58:15,100 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier2:FREQuency -500000000
+2025-10-06 09:58:15,100 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier3:FREQuency 600000000
+2025-10-06 09:58:15,101 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier4:FREQuency 1000000000
+2025-10-06 09:58:15,101 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:POWer -45
+2025-10-06 09:58:15,102 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier2:POWer -20
+2025-10-06 09:58:15,102 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier3:POWer -25
+2025-10-06 09:58:15,102 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier4:POWer -50
+2025-10-06 09:58:15,102 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:STATe 1
+2025-10-06 09:58:15,103 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier2:STATe 1
+2025-10-06 09:58:15,103 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier3:STATe 1
+2025-10-06 09:58:15,103 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier4:STATe 1
+2025-10-06 09:58:15,103 - INFO - Query: SOURce1:BB:ARBitrary:MCARrier:CLOad;*OPC?
+2025-10-06 09:58:17,934 - INFO - Response: 1
+2025-10-06 09:58:17,934 - INFO - Write: SOURce1:BB:ARBitrary:TRIGger:OUTPut1:MODE REST
+2025-10-06 09:58:17,935 - INFO - Write: SOURce1:BB:ARBitrary:STATe 1
+2025-10-06 09:58:17,935 - INFO - Write: OUTPut1:STATe 1
+2025-10-06 09:58:17,935 - INFO - VSG set: frequency=2.440 GHz, power=-70.00 dBm
+2025-10-06 09:58:17,935 - INFO - Query: *RST;*OPC?
+2025-10-06 09:58:18,252 - INFO - Response: 1
+2025-10-06 09:58:18,252 - INFO - FSW reset for spur search
+2025-10-06 09:58:18,252 - INFO - Write: INIT:CONT OFF
+2025-10-06 09:58:18,253 - INFO - Write: SENS:FREQ:STAR 1220000000
+2025-10-06 09:58:18,253 - INFO - Write: SENS:FREQ:STOP 2439000000
+2025-10-06 09:58:18,253 - INFO - Write: :DISP:WIND1:SUBW:TRAC1:MODE AVER
+2025-10-06 09:58:18,253 - INFO - Write: :SENS:AVER:COUN 5
+2025-10-06 09:58:18,254 - INFO - Write: :SENS:WIND1:DET1:FUNC RMS
+2025-10-06 09:58:18,254 - INFO - Write: :SENS:LIST:RANG1:FILT:TYPE NORM
+2025-10-06 09:58:18,254 - INFO - Write: :SENS:BAND:RES 20000.0
+2025-10-06 09:58:18,254 - INFO - Write: :SENS:SWE:TIME:AUTO ON
+2025-10-06 09:58:18,254 - INFO - Write: SENS:SWE:TYPE FFT
+2025-10-06 09:58:18,254 - INFO - Write: SENS:SWE:OPT SPE
+2025-10-06 09:58:18,255 - INFO - Write: SENS:SWE:WIND1:POIN 100001
+2025-10-06 09:58:18,255 - INFO - Write: DISP:WIND1:TRAC:Y:SCAL:RLEV -30
+2025-10-06 09:58:18,255 - INFO - Write: SENS:INP:ATT:AUTO OFF
+2025-10-06 09:58:18,255 - INFO - Write: :INP:ATT 0   
+2025-10-06 09:58:18,256 - INFO - Write: INP:GAIN:STAT ON
+2025-10-06 09:58:18,256 - INFO - Write: INP:GAIN:VAL 30
+2025-10-06 09:58:18,256 - INFO - Write: SENS:POW:NCOR ON
+2025-10-06 09:58:18,256 - INFO - Write: CALC1:MARK1:FUNC:FPE:STAT ON
+2025-10-06 09:58:18,256 - INFO - Write: CALC1:MARK1:X:SLIM:LEFT 1220000000.0
+2025-10-06 09:58:18,257 - INFO - Write: CALC1:MARK1:X:SLIM:RIGH 4880000000.0
+2025-10-06 09:58:18,257 - INFO - Write: CALC1:THR -122
+2025-10-06 09:58:18,257 - INFO - Write: CALC1:MARK1:X:SLIM:STAT ON
+2025-10-06 09:58:18,257 - INFO - Write: CALC1:THR:STAT ON
+2025-10-06 09:58:18,257 - INFO - Spur detection table configured
+2025-10-06 09:58:18,258 - INFO - Range 1: 1.220–2.439 GHz
+2025-10-06 09:58:18,258 - INFO - Write: :INIT:CONT OFF
+2025-10-06 09:58:18,258 - INFO - Query: INIT:IMM;*OPC?
+2025-10-06 09:58:27,137 - INFO - Response: 1
+2025-10-06 09:58:27,137 - INFO - Spur search measurement completed
+2025-10-06 09:58:27,137 - INFO - Query: :CALC:MARK:FUNC:FPE:COUN?
+2025-10-06 09:58:27,139 - INFO - Response: 50
+2025-10-06 09:58:27,139 - INFO - Write: DISP:WIND1:SUBW:TRAC1:Y:SCAL:AUTO ONCE
+2025-10-06 09:58:27,139 - INFO - Query: :CALC:MARK:FUNC:FPE:X?
+2025-10-06 09:58:27,538 - INFO - Response: 1439997000,1493449000,1939867000,1940001000,1940123000,1988663000,1989480000,2408239000,2408629000,2408763000,2408934000,2409019000,2409238000,2409628000,2409763000,2410019000,2410067000,2410238000,2410372000,2410470000,2410628000,2410762000,2411006000,2411238000,2411433000,2411762000,2412237000,2412371000,2412530000,2412627000,2412761000,2412932000,2413017000,2413237000,2413468000,2413627000,2413761000,2413932000,2414005000,2414200000,2414468000,2414529000,2414760000,2415016000,2415236000,2415370000,2415638000,2415760000,2416235000,2416430000
+2025-10-06 09:58:27,538 - INFO - Query: :CALC:MARK:FUNC:FPE:Y?
+2025-10-06 09:58:27,539 - INFO - Response: -80.5714950562,-104.347587585,-103.192474365,-56.3010940552,-103.82963562,-103.693702698,-103.959648132,-101.686294556,-104.272987366,-102.617546082,-104.238494873,-104.480567932,-101.339874268,-103.182228088,-101.166908264,-101.87978363,-103.346061707,-101.301597595,-102.286254883,-103.41418457,-102.388290405,-101.829963684,-102.913475037,-99.8516235352,-104.019889832,-103.289665222,-103.506500244,-103.520736694,-102.556488037,-101.80279541,-100.850540161,-103.13986969,-100.155822754,-101.954925537,-103.66217804,-102.812522888,-100.80191803,-103.605834961,-102.722244263,-102.649078369,-104.293838501,-103.496589661,-100.984817505,-102.457580566,-102.356452942,-102.572532654,-102.13923645,-101.138877869,-103.784446716,-104.267555237
+2025-10-06 09:58:27,539 - INFO - Spur 1: 1.439997 GHz, -80.57 dBm
+2025-10-06 09:58:27,539 - INFO - Spur 2: 1.493449 GHz, -104.35 dBm
+2025-10-06 09:58:27,540 - INFO - Spur 3: 1.939867 GHz, -103.19 dBm
+2025-10-06 09:58:27,540 - INFO - Spur 4: 1.940001 GHz, -56.30 dBm
+2025-10-06 09:58:27,540 - INFO - Spur 5: 1.940123 GHz, -103.83 dBm
+2025-10-06 09:58:27,540 - INFO - Spur 6: 1.988663 GHz, -103.69 dBm
+2025-10-06 09:58:27,540 - INFO - Spur 7: 1.989480 GHz, -103.96 dBm
+2025-10-06 09:58:27,540 - INFO - Spur 8: 2.408239 GHz, -101.69 dBm
+2025-10-06 09:58:27,540 - INFO - Spur 9: 2.408629 GHz, -104.27 dBm
+2025-10-06 09:58:27,540 - INFO - Spur 10: 2.408763 GHz, -102.62 dBm
+2025-10-06 09:58:27,540 - INFO - Spur 11: 2.408934 GHz, -104.24 dBm
+2025-10-06 09:58:27,540 - INFO - Spur 12: 2.409019 GHz, -104.48 dBm
+2025-10-06 09:58:27,540 - INFO - Spur 13: 2.409238 GHz, -101.34 dBm
+2025-10-06 09:58:27,540 - INFO - Spur 14: 2.409628 GHz, -103.18 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 15: 2.409763 GHz, -101.17 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 16: 2.410019 GHz, -101.88 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 17: 2.410067 GHz, -103.35 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 18: 2.410238 GHz, -101.30 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 19: 2.410372 GHz, -102.29 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 20: 2.410470 GHz, -103.41 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 21: 2.410628 GHz, -102.39 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 22: 2.410762 GHz, -101.83 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 23: 2.411006 GHz, -102.91 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 24: 2.411238 GHz, -99.85 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 25: 2.411433 GHz, -104.02 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 26: 2.411762 GHz, -103.29 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 27: 2.412237 GHz, -103.51 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 28: 2.412371 GHz, -103.52 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 29: 2.412530 GHz, -102.56 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 30: 2.412627 GHz, -101.80 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 31: 2.412761 GHz, -100.85 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 32: 2.412932 GHz, -103.14 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 33: 2.413017 GHz, -100.16 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 34: 2.413237 GHz, -101.95 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 35: 2.413468 GHz, -103.66 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 36: 2.413627 GHz, -102.81 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 37: 2.413761 GHz, -100.80 dBm
+2025-10-06 09:58:27,541 - INFO - Spur 38: 2.413932 GHz, -103.61 dBm
+2025-10-06 09:58:27,542 - INFO - Spur 39: 2.414005 GHz, -102.72 dBm
+2025-10-06 09:58:27,542 - INFO - Spur 40: 2.414200 GHz, -102.65 dBm
+2025-10-06 09:58:27,542 - INFO - Spur 41: 2.414468 GHz, -104.29 dBm
+2025-10-06 09:58:27,542 - INFO - Spur 42: 2.414529 GHz, -103.50 dBm
+2025-10-06 09:58:27,542 - INFO - Spur 43: 2.414760 GHz, -100.98 dBm
+2025-10-06 09:58:27,542 - INFO - Spur 44: 2.415016 GHz, -102.46 dBm
+2025-10-06 09:58:27,542 - INFO - Spur 45: 2.415236 GHz, -102.36 dBm
+2025-10-06 09:58:27,542 - INFO - Spur 46: 2.415370 GHz, -102.57 dBm
+2025-10-06 09:58:27,542 - INFO - Spur 47: 2.415638 GHz, -102.14 dBm
+2025-10-06 09:58:27,542 - INFO - Spur 48: 2.415760 GHz, -101.14 dBm
+2025-10-06 09:58:27,542 - INFO - Spur 49: 2.416235 GHz, -103.78 dBm
+2025-10-06 09:58:27,542 - INFO - Spur 50: 2.416430 GHz, -104.27 dBm
+2025-10-06 09:58:27,542 - DEBUG - SpurSearch results for 2.440 GHz: [(1439997000.0, -80.5714950562), (1493449000.0, -104.347587585), (1939867000.0, -103.192474365), (1940001000.0, -56.3010940552), (1940123000.0, -103.82963562), (1988663000.0, -103.693702698), (1989480000.0, -103.959648132), (2408239000.0, -101.686294556), (2408629000.0, -104.272987366), (2408763000.0, -102.617546082), (2408934000.0, -104.238494873), (2409019000.0, -104.480567932), (2409238000.0, -101.339874268), (2409628000.0, -103.182228088), (2409763000.0, -101.166908264), (2410019000.0, -101.87978363), (2410067000.0, -103.346061707), (2410238000.0, -101.301597595), (2410372000.0, -102.286254883), (2410470000.0, -103.41418457), (2410628000.0, -102.388290405), (2410762000.0, -101.829963684), (2411006000.0, -102.913475037), (2411238000.0, -99.8516235352), (2411433000.0, -104.019889832), (2411762000.0, -103.289665222), (2412237000.0, -103.506500244), (2412371000.0, -103.520736694), (2412530000.0, -102.556488037), (2412627000.0, -101.80279541), (2412761000.0, -100.850540161), (2412932000.0, -103.13986969), (2413017000.0, -100.155822754), (2413237000.0, -101.954925537), (2413468000.0, -103.66217804), (2413627000.0, -102.812522888), (2413761000.0, -100.80191803), (2413932000.0, -103.605834961), (2414005000.0, -102.722244263), (2414200000.0, -102.649078369), (2414468000.0, -104.293838501), (2414529000.0, -103.496589661), (2414760000.0, -100.984817505), (2415016000.0, -102.457580566), (2415236000.0, -102.356452942), (2415370000.0, -102.572532654), (2415638000.0, -102.13923645), (2415760000.0, -101.138877869), (2416235000.0, -103.784446716), (2416430000.0, -104.267555237)]
+2025-10-06 09:58:27,542 - INFO - Socket closed
+2025-10-06 09:58:27,542 - INFO - FSW connection closed
+2025-10-06 09:58:27,542 - INFO - Write: OUTP:STAT OFF
+2025-10-06 09:58:27,542 - INFO - Socket closed
+2025-10-06 09:58:27,542 - INFO - VSG connection closed
+2025-10-06 09:58:27,542 - INFO - Socket closed
+2025-10-06 09:58:27,543 - INFO - Socket closed
+2025-10-06 09:58:27,543 - INFO - Initializing SpurSearch for 2.450 GHz
+2025-10-06 09:58:27,545 - INFO - Connected to 192.168.200.20:5025
+2025-10-06 09:58:27,545 - INFO - Query: *IDN?
+2025-10-06 09:58:27,548 - INFO - Response: Rohde&Schwarz,FSW-50,1331.5003K50/101878,6.20
+2025-10-06 09:58:27,550 - INFO - Connected to 192.168.200.10:5025
+2025-10-06 09:58:27,550 - INFO - Query: *IDN?
+2025-10-06 09:58:27,551 - INFO - Response: Rohde&Schwarz,SMW200A,1412.0000K02/111891,5.30.305.48
+2025-10-06 09:58:27,551 - INFO - SpurSearch initialized: fundamental=2.45 GHz, RBW=0.02 MHz, spur_limit=-122 dBm, VSG_power=-70 dBm
+2025-10-06 09:58:27,551 - INFO - Starting SpurSearch test set 3: fundamental=2.450 GHz, RBW=0.020 MHz, limit=-122.00 dBm, power=-70.00 dBm
+2025-10-06 09:58:27,551 - INFO - Query: *RST;*OPC?
+2025-10-06 09:58:28,618 - INFO - Response: 1
+2025-10-06 09:58:28,618 - INFO - Write: SOUR:FREQ:CW 2450000000
+2025-10-06 09:58:28,619 - INFO - Write: SOUR:POW:LEV:IMM:AMPL -70.00
+2025-10-06 09:58:28,619 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:MODE ARB
+2025-10-06 09:58:28,619 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:COUNt 4
+2025-10-06 09:58:28,619 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:FREQuency -1000000000
+2025-10-06 09:58:28,620 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier2:FREQuency -500000000
+2025-10-06 09:58:28,620 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier3:FREQuency 600000000
+2025-10-06 09:58:28,620 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier4:FREQuency 1000000000
+2025-10-06 09:58:28,620 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:POWer -45
+2025-10-06 09:58:28,620 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier2:POWer -20
+2025-10-06 09:58:28,621 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier3:POWer -25
+2025-10-06 09:58:28,621 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier4:POWer -50
+2025-10-06 09:58:28,621 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier1:STATe 1
+2025-10-06 09:58:28,621 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier2:STATe 1
+2025-10-06 09:58:28,621 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier3:STATe 1
+2025-10-06 09:58:28,621 - INFO - Write: SOURce1:BB:ARBitrary:MCARrier:CARRier4:STATe 1
+2025-10-06 09:58:28,622 - INFO - Query: SOURce1:BB:ARBitrary:MCARrier:CLOad;*OPC?
+2025-10-06 09:58:31,456 - INFO - Response: 1
+2025-10-06 09:58:31,456 - INFO - Write: SOURce1:BB:ARBitrary:TRIGger:OUTPut1:MODE REST
+2025-10-06 09:58:31,456 - INFO - Write: SOURce1:BB:ARBitrary:STATe 1
+2025-10-06 09:58:31,457 - INFO - Write: OUTPut1:STATe 1
+2025-10-06 09:58:31,457 - INFO - VSG set: frequency=2.450 GHz, power=-70.00 dBm
+2025-10-06 09:58:31,457 - INFO - Query: *RST;*OPC?
+2025-10-06 09:58:31,808 - INFO - Response: 1
+2025-10-06 09:58:31,808 - INFO - FSW reset for spur search
+2025-10-06 09:58:31,809 - INFO - Write: INIT:CONT OFF
+2025-10-06 09:58:31,809 - INFO - Write: SENS:FREQ:STAR 1225000000
+2025-10-06 09:58:31,809 - INFO - Write: SENS:FREQ:STOP 2449000000
+2025-10-06 09:58:31,810 - INFO - Write: :DISP:WIND1:SUBW:TRAC1:MODE AVER
+2025-10-06 09:58:31,810 - INFO - Write: :SENS:AVER:COUN 5
+2025-10-06 09:58:31,810 - INFO - Write: :SENS:WIND1:DET1:FUNC RMS
+2025-10-06 09:58:31,810 - INFO - Write: :SENS:LIST:RANG1:FILT:TYPE NORM
+2025-10-06 09:58:31,811 - INFO - Write: :SENS:BAND:RES 20000.0
+2025-10-06 09:58:31,811 - INFO - Write: :SENS:SWE:TIME:AUTO ON
+2025-10-06 09:58:31,811 - INFO - Write: SENS:SWE:TYPE FFT
+2025-10-06 09:58:31,811 - INFO - Write: SENS:SWE:OPT SPE
+2025-10-06 09:58:31,811 - INFO - Write: SENS:SWE:WIND1:POIN 100001
+2025-10-06 09:58:31,812 - INFO - Write: DISP:WIND1:TRAC:Y:SCAL:RLEV -30
+2025-10-06 09:58:31,812 - INFO - Write: SENS:INP:ATT:AUTO OFF
+2025-10-06 09:58:31,812 - INFO - Write: :INP:ATT 0   
+2025-10-06 09:58:31,812 - INFO - Write: INP:GAIN:STAT ON
+2025-10-06 09:58:31,813 - INFO - Write: INP:GAIN:VAL 30
+2025-10-06 09:58:31,813 - INFO - Write: SENS:POW:NCOR ON
+2025-10-06 09:58:31,813 - INFO - Write: CALC1:MARK1:FUNC:FPE:STAT ON
+2025-10-06 09:58:31,813 - INFO - Write: CALC1:MARK1:X:SLIM:LEFT 1225000000.0
+2025-10-06 09:58:31,813 - INFO - Write: CALC1:MARK1:X:SLIM:RIGH 4900000000.0
+2025-10-06 09:58:31,814 - INFO - Write: CALC1:THR -122
+2025-10-06 09:58:31,814 - INFO - Write: CALC1:MARK1:X:SLIM:STAT ON
+2025-10-06 09:58:31,814 - INFO - Write: CALC1:THR:STAT ON
+2025-10-06 09:58:31,814 - INFO - Spur detection table configured
+2025-10-06 09:58:31,815 - INFO - Range 1: 1.225–2.449 GHz
+2025-10-06 09:58:31,815 - INFO - Write: :INIT:CONT OFF
+2025-10-06 09:58:31,815 - INFO - Query: INIT:IMM;*OPC?
+2025-10-06 09:58:40,677 - INFO - Response: 1
+2025-10-06 09:58:40,678 - INFO - Spur search measurement completed
+2025-10-06 09:58:40,678 - INFO - Query: :CALC:MARK:FUNC:FPE:COUN?
+2025-10-06 09:58:40,680 - INFO - Response: 50
+2025-10-06 09:58:40,680 - INFO - Write: DISP:WIND1:SUBW:TRAC1:Y:SCAL:AUTO ONCE
+2025-10-06 09:58:40,680 - INFO - Query: :CALC:MARK:FUNC:FPE:X?
+2025-10-06 09:58:41,079 - INFO - Response: 1242117000,1298384000,1302534000,1309914000,1324945000,1354883000,1373207000,1374834000,1383745000,1383965000,1393586000,1406254000,1406744000,1407001000,1409082000,1438029000,1440967000,1450000000,1455165000,1487711000,1567931000,1575679000,1578286000,1587637000,1608996000,1614491000,1634075000,1683255000,1686853000,1785837000,1786437000,1803181000,1852288000,1949999000,1950133000,1963928000,1985360000,2040916000,2059215000,2070182000,2190010000,2193511000,2266448000,2306815000,2320879000,2376509000,2379630000,2379704000,2380671000,2397097000
+2025-10-06 09:58:41,079 - INFO - Query: :CALC:MARK:FUNC:FPE:Y?
+2025-10-06 09:58:41,081 - INFO - Response: -105.538238525,-105.7032547,-105.815452576,-105.253959656,-105.948242188,-105.929763794,-105.770721436,-105.315986633,-105.915390015,-105.792419434,-106.078140259,-105.617485046,-105.965133667,-105.492477417,-105.323738098,-105.918426514,-105.842086792,-80.7945556641,-105.757278442,-105.965293884,-105.40397644,-106.112350464,-105.964981079,-105.822296143,-106.098960876,-105.615478516,-106.047111511,-105.978027344,-106.067581177,-105.862937927,-105.914421082,-105.713920593,-105.815536499,-56.2164268494,-104.449790955,-105.246612549,-105.407371521,-105.863426208,-105.747894287,-106.013778687,-106.098258972,-104.670806885,-105.576179504,-105.272880554,-105.731254578,-106.090126038,-106.066116333,-106.091629028,-106.03162384,-105.81427002
+2025-10-06 09:58:41,081 - INFO - Spur 1: 1.242117 GHz, -105.54 dBm
+2025-10-06 09:58:41,081 - INFO - Spur 2: 1.298384 GHz, -105.70 dBm
+2025-10-06 09:58:41,081 - INFO - Spur 3: 1.302534 GHz, -105.82 dBm
+2025-10-06 09:58:41,081 - INFO - Spur 4: 1.309914 GHz, -105.25 dBm
+2025-10-06 09:58:41,081 - INFO - Spur 5: 1.324945 GHz, -105.95 dBm
+2025-10-06 09:58:41,081 - INFO - Spur 6: 1.354883 GHz, -105.93 dBm
+2025-10-06 09:58:41,081 - INFO - Spur 7: 1.373207 GHz, -105.77 dBm
+2025-10-06 09:58:41,082 - INFO - Spur 8: 1.374834 GHz, -105.32 dBm
+2025-10-06 09:58:41,082 - INFO - Spur 9: 1.383745 GHz, -105.92 dBm
+2025-10-06 09:58:41,082 - INFO - Spur 10: 1.383965 GHz, -105.79 dBm
+2025-10-06 09:58:41,082 - INFO - Spur 11: 1.393586 GHz, -106.08 dBm
+2025-10-06 09:58:41,082 - INFO - Spur 12: 1.406254 GHz, -105.62 dBm
+2025-10-06 09:58:41,082 - INFO - Spur 13: 1.406744 GHz, -105.97 dBm
+2025-10-06 09:58:41,082 - INFO - Spur 14: 1.407001 GHz, -105.49 dBm
+2025-10-06 09:58:41,082 - INFO - Spur 15: 1.409082 GHz, -105.32 dBm
+2025-10-06 09:58:41,082 - INFO - Spur 16: 1.438029 GHz, -105.92 dBm
+2025-10-06 09:58:41,082 - INFO - Spur 17: 1.440967 GHz, -105.84 dBm
+2025-10-06 09:58:41,082 - INFO - Spur 18: 1.450000 GHz, -80.79 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 19: 1.455165 GHz, -105.76 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 20: 1.487711 GHz, -105.97 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 21: 1.567931 GHz, -105.40 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 22: 1.575679 GHz, -106.11 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 23: 1.578286 GHz, -105.96 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 24: 1.587637 GHz, -105.82 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 25: 1.608996 GHz, -106.10 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 26: 1.614491 GHz, -105.62 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 27: 1.634075 GHz, -106.05 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 28: 1.683255 GHz, -105.98 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 29: 1.686853 GHz, -106.07 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 30: 1.785837 GHz, -105.86 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 31: 1.786437 GHz, -105.91 dBm
+2025-10-06 09:58:41,083 - INFO - Spur 32: 1.803181 GHz, -105.71 dBm
+2025-10-06 09:58:41,084 - INFO - Spur 33: 1.852288 GHz, -105.82 dBm
+2025-10-06 09:58:41,084 - INFO - Spur 34: 1.949999 GHz, -56.22 dBm
+2025-10-06 09:58:41,084 - INFO - Spur 35: 1.950133 GHz, -104.45 dBm
+2025-10-06 09:58:41,084 - INFO - Spur 36: 1.963928 GHz, -105.25 dBm
+2025-10-06 09:58:41,084 - INFO - Spur 37: 1.985360 GHz, -105.41 dBm
+2025-10-06 09:58:41,084 - INFO - Spur 38: 2.040916 GHz, -105.86 dBm
+2025-10-06 09:58:41,084 - INFO - Spur 39: 2.059215 GHz, -105.75 dBm
+2025-10-06 09:58:41,084 - INFO - Spur 40: 2.070182 GHz, -106.01 dBm
+2025-10-06 09:58:41,084 - INFO - Spur 41: 2.190010 GHz, -106.10 dBm
+2025-10-06 09:58:41,084 - INFO - Spur 42: 2.193511 GHz, -104.67 dBm
+2025-10-06 09:58:41,084 - INFO - Spur 43: 2.266448 GHz, -105.58 dBm
+2025-10-06 09:58:41,085 - INFO - Spur 44: 2.306815 GHz, -105.27 dBm
+2025-10-06 09:58:41,085 - INFO - Spur 45: 2.320879 GHz, -105.73 dBm
+2025-10-06 09:58:41,085 - INFO - Spur 46: 2.376509 GHz, -106.09 dBm
+2025-10-06 09:58:41,085 - INFO - Spur 47: 2.379630 GHz, -106.07 dBm
+2025-10-06 09:58:41,085 - INFO - Spur 48: 2.379704 GHz, -106.09 dBm
+2025-10-06 09:58:41,085 - INFO - Spur 49: 2.380671 GHz, -106.03 dBm
+2025-10-06 09:58:41,085 - INFO - Spur 50: 2.397097 GHz, -105.81 dBm
+2025-10-06 09:58:41,085 - DEBUG - SpurSearch results for 2.450 GHz: [(1242117000.0, -105.538238525), (1298384000.0, -105.7032547), (1302534000.0, -105.815452576), (1309914000.0, -105.253959656), (1324945000.0, -105.948242188), (1354883000.0, -105.929763794), (1373207000.0, -105.770721436), (1374834000.0, -105.315986633), (1383745000.0, -105.915390015), (1383965000.0, -105.792419434), (1393586000.0, -106.078140259), (1406254000.0, -105.617485046), (1406744000.0, -105.965133667), (1407001000.0, -105.492477417), (1409082000.0, -105.323738098), (1438029000.0, -105.918426514), (1440967000.0, -105.842086792), (1450000000.0, -80.7945556641), (1455165000.0, -105.757278442), (1487711000.0, -105.965293884), (1567931000.0, -105.40397644), (1575679000.0, -106.112350464), (1578286000.0, -105.964981079), (1587637000.0, -105.822296143), (1608996000.0, -106.098960876), (1614491000.0, -105.615478516), (1634075000.0, -106.047111511), (1683255000.0, -105.978027344), (1686853000.0, -106.067581177), (1785837000.0, -105.862937927), (1786437000.0, -105.914421082), (1803181000.0, -105.713920593), (1852288000.0, -105.815536499), (1949999000.0, -56.2164268494), (1950133000.0, -104.449790955), (1963928000.0, -105.246612549), (1985360000.0, -105.407371521), (2040916000.0, -105.863426208), (2059215000.0, -105.747894287), (2070182000.0, -106.013778687), (2190010000.0, -106.098258972), (2193511000.0, -104.670806885), (2266448000.0, -105.576179504), (2306815000.0, -105.272880554), (2320879000.0, -105.731254578), (2376509000.0, -106.090126038), (2379630000.0, -106.066116333), (2379704000.0, -106.091629028), (2380671000.0, -106.03162384), (2397097000.0, -105.81427002)]
+2025-10-06 09:58:41,086 - INFO - Socket closed
+2025-10-06 09:58:41,086 - INFO - FSW connection closed
+2025-10-06 09:58:41,086 - INFO - Write: OUTP:STAT OFF
+2025-10-06 09:58:41,086 - INFO - Socket closed
+2025-10-06 09:58:41,087 - INFO - VSG connection closed
+2025-10-06 09:58:41,087 - INFO - Socket closed
+2025-10-06 09:58:41,087 - INFO - Socket closed
+2025-10-06 09:58:41,095 - INFO - Saved results to: C:\Users\LINER\Documents\PycharmProjects\20251006_5GNR_LTE_STN_SpurTest\src\results_output.json
+2025-10-06 09:58:41,424 - INFO - Successfully saved to: C:\Users\LINER\Documents\PycharmProjects\20251006_5GNR_LTE_STN_SpurTest\src\results_output.xlsx

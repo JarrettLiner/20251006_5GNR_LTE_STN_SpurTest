@@ -1,0 +1,15 @@
+# Required dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+openpyxl>=3.1.0  # Required for Excel export via pandas
+
+# Custom module included in src/instruments/iSocket.py
+# iSocket
+
+# Optional: Alternative to iSocket for instrument communication
+# pyvisa>=1.12.0
+
+# Note: The 'statistics' module is part of Python's standard library (3.4+)
+
+# Optional development dependencies (for testing)
+# pytest>=7.0.0

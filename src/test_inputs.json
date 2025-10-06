@@ -1,0 +1,93 @@
+{
+  "lte": [
+    {
+      "run": false,
+      "center_frequency_ghz": [6.201, 6.501],
+      "power_dbm": [-10.0,  -8.0],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.dfl"
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [6.123, 6.423],
+      "power_dbm": [-12.0, -11.0, -10.0],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/LTE_DL_20MHz_256QAM_100RB_0RBO.dfl"
+    }
+  ],
+  "nr5g": [
+    {
+      "run": false,
+      "center_frequency_ghz": [6.123, 6.223],
+      "power_dbm": [-20, -16, -12, -8, -4, 0, 4, 8, 10],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/5GNR/Qorvo_EVM_opt/5GNR_UL_10MHz_256QAM_30kHz_24RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/5GNR_UL_10MHz_256QAM_30kHz_24RB_0RBO.dfl"
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [6.123, 6.223],
+      "power_dbm": [-20, -16, -12, -8, -4, 0, 4, 8, 10],
+      "measure_ch_pwr": false,
+      "measure_aclr": true,
+      "waveform_file": "/var/user/5GNR/Qorvo_EVM_opt/5GNR_UL_100MHz_256QAM_60kHz_135RB_0RBO.wv",
+      "setup_file": "C:/r_s/instr/user/Qorvo/5GNR_UL_100MHz_256QAM_60kHz_135RB_0RBO.dfl"
+    }
+  ],
+  "STN": [
+    {
+      "run": false,
+      "center_frequency_ghz": {
+        "range": {
+          "start_ghz": 0.717,
+          "stop_ghz": 0.717,
+          "step_mhz": 10
+        }
+      },
+      "iterations": 1
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": {
+        "range": {
+          "start_ghz": 2.400,
+          "stop_ghz": 2.481,
+          "step_mhz": 5
+        }
+      },
+      "iterations": 5
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [2.483, 5.750],
+      "iterations": 10
+    }
+  ],
+  "spur_search": [
+    {
+      "run": true,
+      "fundamental_frequency_ghz": [2.43, 2.44, 2.45],
+      "rbw_mhz": 0.02,
+      "spur_limit_dbm": -122,
+      "power_dbm": -70
+    },
+    {
+      "run": false,
+      "fundamental_frequency_ghz": {
+        "range": {
+          "start_ghz": 2.400,
+          "stop_ghz": 2.481,
+          "step_mhz": 20
+        }
+      },
+      "rbw_mhz": 0.02,
+      "spur_limit_dbm": -122,
+      "power_dbm": -70
+    }
+  ]
+}

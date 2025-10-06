@@ -1,0 +1,95 @@
+{
+  "lte": [
+    {
+      "run": true,
+      "center_frequency_ghz": [6.201, 6.501],
+      "power_dbm": [-10.0, -9.0, -8.0],
+      "resource_block_offset": 0,
+      "channel_bandwidth_mhz": 5,
+      "modulation_type": "QPSK",
+      "duplexing": "TDD",
+      "link_direction": "UL",
+      "measure_ch_pwr": true,
+      "measure_aclr": true
+    },
+    {
+      "run": true,
+      "center_frequency_ghz": [6.123, 6.423],
+      "power_dbm": [-12.0, -11.0, -10.0],
+      "resource_block_offset": 0,
+      "channel_bandwidth_mhz": 10,
+      "modulation_type": "QAM16",
+      "duplexing": "FDD",
+      "link_direction": "UL",
+      "measure_ch_pwr": true,
+      "measure_aclr": true
+    }
+  ],
+  "nr5g": [
+    {
+      "run": false,
+      "center_frequency_ghz": [6.123, 6.223],
+      "power_dbm": [-5.0, -1.0],
+      "resource_blocks": 51,
+      "resource_block_offset": 0,
+      "channel_bandwidth_mhz": 20,
+      "modulation_type": "QAM256",
+      "duplexing": "FDD",
+      "link_direction": "UL",
+      "subcarrier_spacing_khz": 30,
+      "measure_ch_pwr": true,
+      "measure_aclr": true
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [6.323, 6.423],
+      "power_dbm": [-7.0, -3.0],
+      "resource_blocks": 25,
+      "resource_block_offset": 5,
+      "channel_bandwidth_mhz": 10,
+      "modulation_type": "QPSK",
+      "subcarrier_spacing_khz": 15,
+      "measure_ch_pwr": true,
+      "measure_aclr": true
+    }
+  ],
+  "STN": [
+    {
+      "run": false,
+      "center_frequency_ghz": {
+        "range": {
+          "start_ghz": 0.617,
+          "stop_ghz": 0.961,
+          "step_mhz": 10
+        }
+      },
+      "iterations": 1
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": {
+        "range": {
+          "start_ghz": 2.400,
+          "stop_ghz": 2.481,
+          "step_mhz": 20
+        }
+      },
+      "iterations": 1
+    },
+    {
+      "run": false,
+      "center_frequency_ghz": [
+        2.483, 3.300, 3.500, 3.700, 4.100, 4.300, 4.500, 4.700, 4.900, 5.000, 5.150, 5.350, 5.550, 5.750
+      ],
+      "iterations": 1
+    }
+  ],
+  "spur_search": [
+    {
+      "run": false,
+      "fundamental_frequency_ghz": 6.000,
+      "rbw_mhz": 0.01,
+      "spur_limit_dbm": -95
+    }
+  ]
+}
